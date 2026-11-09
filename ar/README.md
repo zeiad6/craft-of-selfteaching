@@ -1,5 +1,13 @@
 <div dir="rtl">
 
+<div align="center">
+
+<img src="../assets/banner.svg" alt="The Craft of Self-Teaching" width="100%">
+
+</div>
+
+---
+
 # 🇸🇦 فن التعلّم الذاتي — الفهرس الكامل للنسخة العربية
 
 مرحباً بك في النسخة العربية المعرّبة والمطوّرة من كتاب **"فن التعلّم الذاتي" (The Craft of Self-Teaching)**، والمحدّثة بالكامل لإصدارات **Python 3.12+**.

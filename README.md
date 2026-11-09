@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="./assets/banner.svg" alt="The Craft of Self-Teaching | فن التعلّم الذاتي" width="100%">
+
 # 📚 فن التعلّم الذاتي | The Craft of Self-Teaching
 ### دليل عملي لاكتساب مهارة التعلّم الذاتي عبر البرمجة بلغة Python (محدّث لـ Python 3.12+)
 *A Modernized, Bilingual Edition of the Open-Source Classic on Self-Teaching & Python Programming*

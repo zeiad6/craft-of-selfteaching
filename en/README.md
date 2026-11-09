@@ -1,3 +1,11 @@
+<div align="center">
+
+<img src="../assets/banner.svg" alt="The Craft of Self-Teaching" width="100%">
+
+</div>
+
+---
+
 # 🌐 The Craft of Self-Teaching — Complete English Index
 
 Welcome to the modernized English edition of **"The Craft of Self-Teaching"**, fully updated for **Python 3.12+** with interactive exercises, type annotations, and modern tooling workflows.
