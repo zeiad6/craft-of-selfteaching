@@ -1,0 +1,15 @@
+# Core Interactive Notebook Environment (Python 3.12+ compatible)
+jupyterlab>=4.2.0
+notebook>=7.2.0
+ipykernel>=6.29.0
+
+# Code Formatting, Type Checking & Quality
+ruff>=0.6.0
+mypy>=1.11.0
+pytest>=8.3.0
+nbmake>=1.5.0
+
+# Practical Examples & Data Utilities Used Across Chapters
+requests>=2.32.0
+rich>=13.8.0
+matplotlib>=3.9.0
