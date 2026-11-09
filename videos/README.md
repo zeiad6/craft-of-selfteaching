@@ -1,17 +1,18 @@
-# 🎬 Video Production & Scripts | سيناريوهات وإنتاج الفيديو
+# 🎬 Video Production & Master Series | سيناريوهات وإنتاج الفيديوهات الشارحة
 
 <div dir="rtl">
 
-يوفر هذا المجلد مسار إنتاج متكامل للفيديوهات الشارحة لكل فصل (3–4 مشاهد بدقة 1080p عالية الوضوح):
+يوفر هذا المجلد مسار إنتاج متكامل وسلسلة فيديوهات مرئية شارحة كاملة (26 فيديو MP4 بدقة 1080p عالية الوضوح):
 
 - **سيناريوهات الفيديوهات:** متوفرة بنسختين كاملتين في [`ar/`](./ar) و[`en/`](./en).
-- **محرك الإنتاج الآلي:** أداة برمجية لتوليد الفيديوهات بصيغة **MP4** مباشرة مع الصوت والترجمة والإطارات التفاعلية.
+- **محرك الإنتاج الآلي:** أداة برمجية ذكية لتوليد الفيديوهات بصيغة **MP4** مباشرة مع الصوت والترجمة والإطارات التفاعلية.
+- **الفيديوهات المكتملة:** 26 ملف فيديو متاح للمشاهدة والتحميل المباشر في [`rendered/`](./rendered).
 
 ---
 
 ## ⚡ 1. الإنتاج والتوليد الآلي للفيديوهات (Automated MP4 Generation)
 
-تم بناء أداة متطورة [`scripts/render_videos.py`](../scripts/render_videos.py) تجمع بين محرك **Edge-TTS** الصوتي عالي النقاء ومحرك **FFmpeg** و **Pillow** لإنتاج الفيديوهات بصيغة MP4 جاهزة فوراً للنشر:
+تم بناء أداة متطورة [`scripts/render_videos.py`](../scripts/render_videos.py) تجمع بين محرك **Edge-TTS** الصوتي ومحرك **FFmpeg** و **Pillow** لإنتاج الفيديوهات بصيغة MP4 جاهزة فوراً للنشر:
 
 ```bash
 # تثبيت المتطلبات الإضافية (مرة واحدة)
@@ -21,15 +22,11 @@ pip install edge-tts imageio-ffmpeg pillow arabic-reshaper python-bidi
 python scripts/render_videos.py --lang ar --chapter 00-preface
 python scripts/render_videos.py --lang ar --chapter 01-getting-started
 
-# توليد فيديو لفصل محدد (باللغة الإنجليزية)
-python scripts/render_videos.py --lang en --chapter 00-preface
-python scripts/render_videos.py --lang en --chapter 01-getting-started
-
-# توليد كافة الفصول تلقائياً دفعة واحدة
-python scripts/render_videos.py --lang ar --all
+# توليد كافة الفصول الـ 26 دفعة واحدة
+python scripts/batch_render_all.py
 ```
 
-📂 **المخرجات:** يتم تصدير الفيديوهات النهائية المدمجة داخل المجلد `videos/rendered/` (مثال: `ar_00-preface.mp4`).
+📂 **المخرجات:** يتم تصدير الفيديوهات النهائية المدمجة داخل المجلد `videos/rendered/` بدقة 1080p وحجم خفيف ومتوافق مع كافة المنصات.
 
 ---
 
@@ -61,28 +58,28 @@ pip install edge-tts imageio-ffmpeg pillow arabic-reshaper python-bidi
 python scripts/render_videos.py --lang en --chapter 00-preface
 python scripts/render_videos.py --lang en --chapter 01-getting-started
 
-# Render all chapters in bulk
-python scripts/render_videos.py --lang en --all
+# Render all 26 chapters in bulk
+python scripts/batch_render_all.py
 ```
 
 📂 **Output:** Final assembled MP4 files are placed under `videos/rendered/` (e.g. `en_00-preface.mp4`).
 
 ---
 
-## 📚 Scripts Directory | فهرس السيناريوهات
+## 📚 Complete Video Catalog | دليل الفيديوهات الشارحة الكامل (26/26 Ready)
 
-| Chapter | 🇸🇦 النسخة العربية | 🌐 English Edition | Rendered MP4 Sample |
-| :-- | :-- | :-- | :-- |
-| Preface | [ar](./ar/00-preface.md) | [en](./en/00-preface.md) | `videos/rendered/*_00-preface.mp4` |
-| 1 | [ar](./ar/01-getting-started.md) | [en](./en/01-getting-started.md) | `videos/rendered/*_01-getting-started.mp4` |
-| 2 | [ar](./ar/02-values-and-operators.md) | [en](./en/02-values-and-operators.md) | Ready to render |
-| 3 | [ar](./ar/03-control-flow.md) | [en](./en/03-control-flow.md) | Ready to render |
-| 4 | [ar](./ar/04-data-structures.md) | [en](./en/04-data-structures.md) | Ready to render |
-| 5 | [ar](./ar/05-functions.md) | [en](./en/05-functions.md) | Ready to render |
-| 6 | [ar](./ar/06-strings-and-regex.md) | [en](./en/06-strings-and-regex.md) | Ready to render |
-| 7 | [ar](./ar/07-file-io.md) | [en](./en/07-file-io.md) | Ready to render |
-| 8 | [ar](./ar/08-oop.md) | [en](./en/08-oop.md) | Ready to render |
-| 9 | [ar](./ar/09-modules.md) | [en](./en/09-modules.md) | Ready to render |
-| 10 | [ar](./ar/10-debugging-and-testing.md) | [en](./en/10-debugging-and-testing.md) | Ready to render |
-| 11 | [ar](./ar/11-reading-docs.md) | [en](./en/11-reading-docs.md) | Ready to render |
-| 12 | [ar](./ar/12-beyond-basics.md) | [en](./en/12-beyond-basics.md) | Ready to render |
+| # | Chapter | 🇸🇦 سيناريو العربية | 🌐 English Script | 🎥 فيديو العربية (MP4) | 🎥 English Video (MP4) |
+| :-: | :-- | :-: | :-: | :-- | :-- |
+| 00 | Preface (المقدمة) | [ar](./ar/00-preface.md) | [en](./en/00-preface.md) | [▶️ ar_00-preface.mp4](./rendered/ar_00-preface.mp4) | [▶️ en_00-preface.mp4](./rendered/en_00-preface.mp4) |
+| 01 | Getting Started (الانطلاقة الأولى) | [ar](./ar/01-getting-started.md) | [en](./en/01-getting-started.md) | [▶️ ar_01-getting-started.mp4](./rendered/ar_01-getting-started.mp4) | [▶️ en_01-getting-started.mp4](./rendered/en_01-getting-started.mp4) |
+| 02 | Values & Operators (القيم والمعاملات) | [ar](./ar/02-values-and-operators.md) | [en](./en/02-values-and-operators.md) | [▶️ ar_02-values-and-operators.mp4](./rendered/ar_02-values-and-operators.mp4) | [▶️ en_02-values-and-operators.mp4](./rendered/en_02-values-and-operators.mp4) |
+| 03 | Control Flow (التحكم في التدفق) | [ar](./ar/03-control-flow.md) | [en](./en/03-control-flow.md) | [▶️ ar_03-control-flow.mp4](./rendered/ar_03-control-flow.mp4) | [▶️ en_03-control-flow.mp4](./rendered/en_03-control-flow.mp4) |
+| 04 | Data Structures (هياكل البيانات) | [ar](./ar/04-data-structures.md) | [en](./en/04-data-structures.md) | [▶️ ar_04-data-structures.mp4](./rendered/ar_04-data-structures.mp4) | [▶️ en_04-data-structures.mp4](./rendered/en_04-data-structures.mp4) |
+| 05 | Functions (الدوال وتفكيك المشكلات) | [ar](./ar/05-functions.md) | [en](./en/05-functions.md) | [▶️ ar_05-functions.mp4](./rendered/ar_05-functions.mp4) | [▶️ en_05-functions.mp4](./rendered/en_05-functions.mp4) |
+| 06 | Strings & Regex (النصوص والأنماط) | [ar](./ar/06-strings-and-regex.md) | [en](./en/06-strings-and-regex.md) | [▶️ ar_06-strings-and-regex.mp4](./rendered/ar_06-strings-and-regex.mp4) | [▶️ en_06-strings-and-regex.mp4](./rendered/en_06-strings-and-regex.mp4) |
+| 07 | File I/O (الملفات واستدامة البيانات) | [ar](./ar/07-file-io.md) | [en](./en/07-file-io.md) | [▶️ ar_07-file-io.mp4](./rendered/ar_07-file-io.md) | [▶️ en_07-file-io.mp4](./rendered/en_07-file-io.mp4) |
+| 08 | OOP (البرمجة كائنية التوجه) | [ar](./ar/08-oop.md) | [en](./en/08-oop.md) | [▶️ ar_08-oop.mp4](./rendered/ar_08-oop.mp4) | [▶️ en_08-oop.mp4](./rendered/en_08-oop.mp4) |
+| 09 | Modules & Ecosystem (الوحدات والمكتبات) | [ar](./ar/09-modules.md) | [en](./en/09-modules.md) | [▶️ ar_09-modules.mp4](./rendered/ar_09-modules.mp4) | [▶️ en_09-modules.mp4](./rendered/en_09-modules.mp4) |
+| 10 | Debugging & Testing (الاختبارات والأخطاء) | [ar](./ar/10-debugging-and-testing.md) | [en](./en/10-debugging-and-testing.md) | [▶️ ar_10-debugging-and-testing.mp4](./rendered/ar_10-debugging-and-testing.mp4) | [▶️ en_10-debugging-and-testing.mp4](./rendered/en_10-debugging-and-testing.mp4) |
+| 11 | Reading Docs (قراءة التوثيق الرسمي) | [ar](./ar/11-reading-docs.md) | [en](./en/11-reading-docs.md) | [▶️ ar_11-reading-docs.mp4](./rendered/ar_11-reading-docs.mp4) | [▶️ en_11-reading-docs.mp4](./rendered/en_11-reading-docs.mp4) |
+| 12 | Beyond Basics (بناء المشاريع الواقعية) | [ar](./ar/12-beyond-basics.md) | [en](./en/12-beyond-basics.md) | [▶️ ar_12-beyond-basics.mp4](./rendered/ar_12-beyond-basics.mp4) | [▶️ en_12-beyond-basics.mp4](./rendered/en_12-beyond-basics.mp4) |
