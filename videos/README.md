@@ -2,11 +2,20 @@
 
 <div dir="rtl">
 
-يوفر هذا المجلد مسار إنتاج متكامل وسلسلة فيديوهات مرئية شارحة كاملة (26 فيديو MP4 بدقة 1080p عالية الوضوح):
+يوفر هذا المجلد مسار إنتاج متكامل وسلسلة فيديوهات مرئية شارحة كاملة (30 فيديو MP4 بدقة 1080p عالية الوضوح):
 
 - **سيناريوهات الفيديوهات:** متوفرة بنسختين كاملتين في [`ar/`](./ar) و[`en/`](./en).
 - **محرك الإنتاج الآلي:** أداة برمجية ذكية لتوليد الفيديوهات بصيغة **MP4** مباشرة مع الصوت والترجمة والإطارات التفاعلية.
-- **الفيديوهات المكتملة:** 26 ملف فيديو متاح للمشاهدة والتحميل المباشر في [`rendered/`](./rendered).
+- **الفيديوهات المكتملة:** 30 ملف فيديو متاح للمشاهدة والتشغيل المباشر في المستودع في [`rendered/`](./rendered).
+
+---
+
+## 🍿 المشاهدة المباشرة في المستودع (In-Repo Video Streaming)
+
+يمكنك الآن مشاهدة جميع الفيديوهات الـ 30 مباشرة دون مغادرة المستودع:
+- **استوديو المشاهدة المدمج (Interactive Web Player):** افتح صفحة **[ideos/index.html](./index.html)** (أو **[player.html](../player.html)**) لتجربة مشغل ويب متكامل مع قوائم التشغيل، والتحكم بالسرعة، والبحث اللحظي.
+- **مشغل GitHub المباشر (Native GitHub Player):** بالنقر على أي رابط فيديو في الجدول أدناه يفتح الفيديو مباشرة داخل مشغل GitHub.
+- **مشغل داخل الدفاتر التفاعلية (Jupyter & Colab):** كل دفتر في /ar و /en مزوّد بشارة تشغيل ومشغل مدمج لمتابعة الفيديو أثناء التدريب.
 
 ---
 
@@ -22,7 +31,7 @@ pip install edge-tts imageio-ffmpeg pillow arabic-reshaper python-bidi
 python scripts/render_videos.py --lang ar --chapter 00-preface
 python scripts/render_videos.py --lang ar --chapter 01-getting-started
 
-# توليد كافة الفصول الـ 26 دفعة واحدة
+# توليد كافة الفيديوهات الـ 30 دفعة واحدة
 python scripts/batch_render_all.py
 ```
 
@@ -58,7 +67,7 @@ pip install edge-tts imageio-ffmpeg pillow arabic-reshaper python-bidi
 python scripts/render_videos.py --lang en --chapter 00-preface
 python scripts/render_videos.py --lang en --chapter 01-getting-started
 
-# Render all 26 chapters in bulk
+# Render all 30 chapters and appendices in bulk
 python scripts/batch_render_all.py
 ```
 

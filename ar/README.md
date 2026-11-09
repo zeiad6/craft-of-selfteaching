@@ -2,7 +2,7 @@
 
 <img src="../assets/banner.svg" alt="The Craft of Self-Teaching | فن التعلّم الذاتي" width="100%">
 
-[**🌐 Switch to English Edition**](../en/README.md) • [**🏠 المستودع الرئيسي**](../README.md)
+[**🌐 Switch to English Edition**](../en/README.md) • [**🍿 استوديو المشاهدة المباشر (Web Player)**](../videos/index.html) • [**🏠 المستودع الرئيسي**](../README.md)
 
 </div>
 

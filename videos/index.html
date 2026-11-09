@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>استوديو الفيديوهات الشارحة | The Craft of Self-Teaching</title>
+  <style>
+    :root {
+      --bg: #070b14;
+      --card-bg: #0f172a;
+      --card-border: #1e293b;
+      --accent-cyan: #38bdf8;
+      --accent-purple: #818cf8;
+      --accent-gold: #fbbf24;
+      --accent-emerald: #34d399;
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text-main);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Top Navigation Bar */
+    header {
+      background: rgba(15, 23, 42, 0.85);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--card-border);
+      padding: 16px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 50;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      color: var(--text-main);
+    }
+
+    .brand-icon {
+      font-size: 26px;
+    }
+
+    .brand-title {
+      font-size: 18px;
+      font-weight: 800;
+      background: linear-gradient(90deg, #38bdf8, #818cf8, #c084fc);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .brand-sub {
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 14px;
+      border-radius: 8px;
+      font-size: 13px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.2s ease;
+      cursor: pointer;
+      border: 1px solid var(--card-border);
+      background: #1e293b;
+      color: var(--text-main);
+    }
+
+    .btn:hover {
+      background: #334155;
+      border-color: var(--accent-cyan);
+      transform: translateY(-1px);
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, #0284c7, #2563eb);
+      border: none;
+      color: #fff;
+    }
+
+    .btn-primary:hover {
+      background: linear-gradient(135deg, #0369a1, #1d4ed8);
+    }
+
+    /* Main Theater Layout */
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 380px;
+      gap: 24px;
+      padding: 24px;
+      flex: 1;
+      max-width: 1600px;
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    @media (max-width: 1024px) {
+      .container {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* Video Player Section */
+    .player-section {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .video-wrapper {
+      position: relative;
+      background: #000;
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid var(--card-border);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+      aspect-ratio: 16 / 9;
+    }
+
+    video {
+      width: 100%;
+      height: 100%;
+      display: block;
+      background: #000;
+    }
+
+    .video-info-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 16px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .video-header-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .video-title {
+      font-size: 22px;
+      font-weight: 700;
+      color: #ffffff;
+      line-height: 1.4;
+    }
+
+    .video-meta-badges {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      padding: 4px 10px;
+      border-radius: 20px;
+      font-size: 11px;
+      font-weight: 700;
+    }
+
+    .badge-ar {
+      background: rgba(16, 185, 129, 0.15);
+      color: #34d399;
+      border: 1px solid rgba(16, 185, 129, 0.3);
+    }
+
+    .badge-en {
+      background: rgba(56, 189, 248, 0.15);
+      color: #38bdf8;
+      border: 1px solid rgba(56, 189, 248, 0.3);
+    }
+
+    .badge-hd {
+      background: rgba(251, 191, 36, 0.15);
+      color: #fbbf24;
+      border: 1px solid rgba(251, 191, 36, 0.3);
+    }
+
+    /* Action Links Bar */
+    .action-links-bar {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      padding-top: 12px;
+      border-top: 1px solid #1e293b;
+    }
+
+    .action-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 12px;
+      border-radius: 8px;
+      background: #1e293b;
+      color: #cbd5e1;
+      font-size: 12px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+
+    .action-link:hover {
+      background: #334155;
+      color: #ffffff;
+      border-color: var(--accent-cyan);
+    }
+
+    /* Player Controls Bar */
+    .controls-strip {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      background: #111827;
+      padding: 10px 16px;
+      border-radius: 10px;
+      border: 1px solid #1f2937;
+      flex-wrap: wrap;
+    }
+
+    .speed-selector {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .speed-btn {
+      background: #1e293b;
+      border: 1px solid #334155;
+      color: #cbd5e1;
+      padding: 4px 8px;
+      border-radius: 6px;
+      font-size: 11px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    .speed-btn.active {
+      background: var(--accent-cyan);
+      color: #0f172a;
+      border-color: var(--accent-cyan);
+    }
+
+    /* Playlist Sidebar */
+    .sidebar {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 16px;
+      display: flex;
+      flex-direction: column;
+      height: calc(100vh - 120px);
+      position: sticky;
+      top: 90px;
+      overflow: hidden;
+    }
+
+    @media (max-width: 1024px) {
+      .sidebar {
+        height: 600px;
+        position: static;
+      }
+    }
+
+    .sidebar-header {
+      padding: 16px;
+      border-bottom: 1px solid var(--card-border);
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .sidebar-title {
+      font-size: 16px;
+      font-weight: 700;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .search-box {
+      width: 100%;
+      background: #0b0f19;
+      border: 1px solid #334155;
+      border-radius: 8px;
+      padding: 8px 12px;
+      color: #ffffff;
+      font-size: 13px;
+      outline: none;
+    }
+
+    .search-box:focus {
+      border-color: var(--accent-cyan);
+    }
+
+    .filter-tabs {
+      display: flex;
+      gap: 6px;
+    }
+
+    .filter-tab {
+      flex: 1;
+      text-align: center;
+      padding: 6px 8px;
+      border-radius: 6px;
+      font-size: 11px;
+      font-weight: 700;
+      cursor: pointer;
+      background: #0b0f19;
+      border: 1px solid #1e293b;
+      color: #94a3b8;
+    }
+
+    .filter-tab.active {
+      background: #1e293b;
+      color: #ffffff;
+      border-color: var(--accent-cyan);
+    }
+
+    .playlist-items {
+      flex: 1;
+      overflow-y: auto;
+      padding: 8px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .playlist-items::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    .playlist-items::-webkit-scrollbar-thumb {
+      background: #334155;
+      border-radius: 3px;
+    }
+
+    .playlist-card {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 10px 12px;
+      border-radius: 10px;
+      background: #131c2e;
+      border: 1px solid transparent;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      text-align: right;
+    }
+
+    .playlist-card:hover {
+      background: #1e293b;
+      border-color: #334155;
+    }
+
+    .playlist-card.active {
+      background: rgba(56, 189, 248, 0.12);
+      border-color: var(--accent-cyan);
+    }
+
+    .playlist-num {
+      font-size: 13px;
+      font-weight: 800;
+      color: #64748b;
+      min-width: 28px;
+    }
+
+    .playlist-card.active .playlist-num {
+      color: var(--accent-cyan);
+    }
+
+    .playlist-info {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .playlist-item-title {
+      font-size: 13px;
+      font-weight: 600;
+      color: #e2e8f0;
+      line-height: 1.3;
+    }
+
+    .playlist-card.active .playlist-item-title {
+      color: #ffffff;
+      font-weight: 700;
+    }
+
+    .playlist-meta {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 11px;
+      color: #64748b;
+    }
+
+    .play-indicator {
+      display: none;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--accent-cyan);
+      box-shadow: 0 0 8px var(--accent-cyan);
+    }
+
+    .playlist-card.active .play-indicator {
+      display: block;
+    }
+
+    footer {
+      border-top: 1px solid var(--card-border);
+      padding: 16px 24px;
+      text-align: center;
+      font-size: 12px;
+      color: var(--text-muted);
+      background: #0b0f19;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Header Bar -->
+  <header>
+    <a href="../README.md" class="brand">
+      <span class="brand-icon">📚</span>
+      <div>
+        <div class="brand-title">فن التعلّم الذاتي • The Craft of Self-Teaching</div>
+        <div class="brand-sub">استوديو المشاهدة المباشرة لكافة الفيديوهات (30 فيديو 1080p)</div>
+      </div>
+    </a>
+    <div class="nav-actions">
+      <a href="../README.md" class="btn">🏠 المستودع الرئيسي</a>
+      <a href="../videos/README.md" class="btn">🎬 دليل الإنتاج</a>
+      <a href="https://github.com/zeiad6/craft-of-selfteaching" target="_blank" class="btn btn-primary">⭐ GitHub Repository</a>
+    </div>
+  </header>
+
+  <!-- Main Theater Layout -->
+  <div class="container">
+    
+    <!-- Player Section -->
+    <div class="player-section">
+      <div class="video-wrapper">
+        <video id="mainVideo" controls playsinline poster="../assets/banner.svg">
+          <source id="videoSource" src="./rendered/ar_00-preface.mp4" type="video/mp4">
+          متصفحك لا يدعم تشغيل الفيديو بصيغة HTML5.
+        </video>
+      </div>
+
+      <!-- Player Controls Strip -->
+      <div class="controls-strip">
+        <div style="display:flex; align-items:center; gap:8px;">
+          <button class="btn" id="prevBtn" title="الفصل السابق">⏮️ السابق</button>
+          <button class="btn" id="nextBtn" title="الفصل التالي">التالي ⏭️</button>
+          <label style="display:flex; align-items:center; gap:6px; font-size:12px; cursor:pointer;">
+            <input type="checkbox" id="autoNext" checked>
+            تشغيل تلقائي متتالي
+          </label>
+        </div>
+
+        <div class="speed-selector">
+          <span style="font-size:12px; color:var(--text-muted);">سرعة التشغيل:</span>
+          <button class="speed-btn" data-speed="0.75">0.75x</button>
+          <button class="speed-btn active" data-speed="1.0">1.0x</button>
+          <button class="speed-btn" data-speed="1.25">1.25x</button>
+          <button class="speed-btn" data-speed="1.5">1.5x</button>
+          <button class="speed-btn" data-speed="2.0">2.0x</button>
+        </div>
+      </div>
+
+      <!-- Current Video Information Card -->
+      <div class="video-info-card">
+        <div class="video-header-row">
+          <div>
+            <div class="video-meta-badges">
+              <span class="badge badge-ar" id="videoLangBadge">🇸🇦 العربية</span>
+              <span class="badge badge-hd">1080p Full HD</span>
+              <span class="badge" style="background:#1e293b; color:#cbd5e1;" id="videoSizeBadge">~1.5 MB</span>
+            </div>
+            <h1 class="video-title" id="videoTitleText">المقدمة: فلسفة التعلّم الذاتي كحرفة حياة</h1>
+          </div>
+        </div>
+
+        <!-- Quick Links for the Current Chapter -->
+        <div class="action-links-bar" id="actionLinksBar">
+          <a href="#" target="_blank" class="action-link" id="linkColab">⚡ تشغيل في Google Colab</a>
+          <a href="#" target="_blank" class="action-link" id="linkGithubPlayer">🎥 فتح بمشغل GitHub المباشر</a>
+          <a href="#" target="_blank" class="action-link" id="linkNotebook">📓 الدفتر التفاعلي (.ipynb)</a>
+          <a href="#" target="_blank" class="action-link" id="linkSolution">🔑 الحل النموذجي</a>
+          <a href="#" class="action-link" id="linkDownload" download>⬇️ تحميل الفيديو (MP4)</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Playlist Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <div class="sidebar-title">
+          <span>قائمة الفيديوهات (30 فيديو)</span>
+          <span style="font-size:12px; color:var(--accent-cyan);" id="playlistCount">30/30</span>
+        </div>
+        <input type="text" id="searchInput" class="search-box" placeholder="🔍 ابحث في العناوين أو الفصول...">
+        <div class="filter-tabs">
+          <div class="filter-tab active" data-filter="all">الكل (30)</div>
+          <div class="filter-tab" data-filter="ar">🇸🇦 العربية (15)</div>
+          <div class="filter-tab" data-filter="en">🌐 English (15)</div>
+        </div>
+      </div>
+
+      <div class="playlist-items" id="playlistContainer">
+        <!-- Rendered dynamically by JavaScript -->
+      </div>
+    </aside>
+
+  </div>
+
+  <footer>
+    كتاب <b>The Craft of Self-Teaching (自学是门手艺)</b> للمؤلف لي شياولاي • ترجمة وتطوير وإنتاج الفيديو: زياد (@zeiad6) • مرخّص تحت رخصة MIT
+  </footer>
+
+  <script>
+    const CATALOG = [
+      // 00 Preface
+      { id: "ar_00-preface", lang: "ar", num: "00", title: "مقدمة: فلسفة التعلّم الذاتي كحرفة حياة", file: "./rendered/ar_00-preface.mp4", size: "1.60 MB", nb: "../ar/00-preface/01-preface.ipynb", colab: "https://colab.research.google.com/github/zeiad6/craft-of-selfteaching/blob/main/ar/00-preface/01-preface.ipynb", sol: "../ar/00-preface/00-translator-note.md" },
+      { id: "en_00-preface", lang: "en", num: "00", title: "Preface: Self-Teaching as a Lifelong Craft", file: "./rendered/en_00-preface.mp4", size: "1.42 MB", nb: "../en/00-preface/01-preface.ipynb", colab: "https://colab.research.google.com/github/zeiad6/craft-of-selfteaching/blob/main/en/00-preface/01-preface.ipynb", sol: "../en/00-preface/00-translator-note.md" },
+
+      // Part 1
+      { id: "ar_01-getting-started", lang: "ar", num: "01", title: "الفصل 01: الانطلاقة الأولى والقراءة الدقيقة", file: "./rendered/ar_01-getting-started.mp4", size: "1.43 MB", nb: "../ar/part-1-foundations/01-getting-started.ipynb", colab: "https://colab.research.google.com/github/zeiad6/craft-of-selfteaching/blob/main/ar/part-1-foundations/01-getting-started.ipynb", sol: "../ar/challenges/solutions/01-getting-started.md" },
+      { id: "en_01-getting-started", lang: "en", num: "01", title: "Chapter 01: Getting Started & The Art of Careful Reading", file: "./rendered/en_01-getting-started.mp4", size: "1.17 MB", nb: "../en/part-1-foundations/01-getting-started.ipynb", colab: "https://colab.research.google.com/github/zeiad6/craft-of-selfteaching/blob/main/en/part-1-foundations/01-getting-started.ipynb", sol: "../en/challenges/solutions/01-getting-started.md" },
+
+      { id: "ar_02-values-and-operators", lang: "ar", num: "02", title: "الفصل 02: القيم والمتغيرات والمعاملات", file: "./rendered/ar_02-values-and-operators.mp4", size: "1.51 MB", nb: "../ar/part-1-foundations/02-values-and-operators.ipynb", colab: "https://colab.research.google.com/github/zeiad6/craft-of-selfteaching/blob/main/ar/part-1-foundations/02-values-and-operators.ipynb", sol: "../ar/challenges/solutions/02-values-and-operators.md" },
+      { id: "en_02-values-and-operators", lang: "en", num: "02", title: "Chapter 02: Values, Variables, and Operators", file: "./rendered/en_02-values-and-operators.mp4", size: "1.26 MB", nb: "../en/part-1-foundations/02-values-and-operators.ipynb", colab: "https://colab.research.google.com/github/zeiad6/craft-of-selfteaching/blob/main/en/part-1-foundations/02-values-and-operators.ipynb", sol: "../en/challenges/solutions/02-values-and-operators.md" },
+
+      { id: "ar_03-control-flow", lang: "ar", num: "03", title: "الفصل 03: التحكم في التدفق ومطابقة الأنماط", file: "./rendered/ar_03-control-flow.mp4", size: "1.36 MB", nb: "../ar/part-1-foundations/03-control-flow.ipynb", colab: "https://colab.research.google.com/github/zeiad6/craft-of-selfteaching/blob/main/ar/part-1-foundations/03-control-flow.ipynb", sol: "../ar/challenges/solutions/03-control-flow.md" },
+      { id: "en_03-control-flow", lang: "en", num: "03", title: "Chapter 03: Control Flow & Pattern Matching", file: "./rendered/en_03-control-flow.mp4", size: "1.10 MB", nb: "../en/part-1-foundations/03-control-flow.ipynb", colab: "https://colab.research.google.com/github/zeiad6/craft-of-selfteaching/blob/main/en/part-1-foundations/03-control-flow.ipynb", sol: "../en/challenges/solutions/03-control-flow.md" },
+
+      { id: "ar_04-data-structures", lang: "ar", num: "04", title: "الفصل 04: هياكل البيانات والقوائم والقواميس", file: "./rendered/ar_04-data-structures.mp4", size: "1.20 MB", nb: "../ar/part-1-foundations/04-data-structures.ipynb", colab: "https://colab.research.google.com/github/zeiad6/craft-of-selfteaching/blob/main/ar/part-1-foundations/04-data-structures.ipynb", sol: "../ar/challenges/solutions/04-data-structures.md" },
+      { id: "en_04-data-structures", lang: "en", num: "04", title: "Chapter 04: Core Data Structures & Comprehensions", file: "./rendered/en_04-data-structures.mp4", size: "0.74 MB", nb: "../en/part-1-foundations/04-data-structures.ipynb", colab: "https://colab.research.google.com/github/zeiad6/craft-of-selfteaching/blob/main/en/part-1-foundations/04-data-structures.ipynb", sol: "../en/challenges/solutions/04-data-structures.md" },
+
+      { id: "ar_05-functions", lang: "ar", num: "05", title: "الفصل 05: الدوال وتفكيك المشكلات والمولدات", file: "./rendered/ar_05-functions.mp4", size: "1.23 MB", nb: "../ar/part-1-foundations/05-functions.ipynb", colab: "https://colab.research.google.com/github/zeiad6/craft-of-selfteaching/blob/main/ar/part-1-foundations/05-functions.ipynb", sol: "../ar/challenges/solutions/05-functions.md" },
+      { id: "en_05-functions", lang: "en", num: "05", title: "Chapter 05: Functions, Decomposition & Generators", file: "./rendered/en_05-functions.mp4", size: "0.81 MB", nb: "../en/part-1-foundations/05-functions.ipynb", colab: "https://colab.research.google.com/github/zeiad6/craft-of-selfteaching/blob/main/en/part-1-foundations/05-functions.ipynb", sol: "../en/challenges/solutions/05-functions.md" },
+
+      { id: "ar_06-strings-and-regex", lang: "ar", num: "06", title: "الفصل 06: النصوص والتنسيق والتعابير النمطية", file: "./rendered/ar_06-strings-and-regex.mp4", size: "1.28 MB", nb: "../ar/part-1-foundations/06-strings-and-regex.ipynb", colab: "https://colab.research.google.com/github/zeiad6/craft-of-selfteaching/blob/main/ar/part-1-foundations/06-strings-and-regex.ipynb", sol: "../ar/challenges/solutions/06-strings-and-regex.md" },
+      { id: "en_06-strings-and-regex", lang: "en", num: "06", title: "Chapter 06: Strings, Formatting, and Regex", file: "./rendered/en_06-strings-and-regex.mp4", size: "1.00 MB", nb: "../en/part-1-foundations/06-strings-and-regex.ipynb", colab: "https://colab.research.google.com/github/zeiad6/craft-of-selfteaching/blob/main/en/part-1-foundations/06-strings-and-regex.ipynb", sol: "../en/challenges/solutions/06-strings-and-regex.md" },
+
+      // Part 2
+      { id: "ar_07-file-io", lang: "ar", num: "07", title: "الفصل 07: التعامل مع الملفات واستدامة البيانات", file: "./rendered/ar_07-file-io.mp4", size: "0.85 MB", nb: "../ar/part-2-practice/07-file-io.ipynb", colab: "https://colab.research.google.com/github/zeiad6/craft-of-selfteaching/blob/main/ar/part-2-practice/07-file-io.ipynb", sol: "../ar/challenges/solutions/07-file-io.md" },
+      { id: "en_07-file-io", lang: "en", num: "07", title: "Chapter 07: File I/O & Data Persistence", file: "./rendered/en_07-file-io.mp4", size: "0.67 MB", nb: "../en/part-2-practice/07-file-io.ipynb", colab: "https://colab.research.google.com/github/zeiad6/craft-of-selfteaching/blob/main/en/part-2-practice/07-file-io.ipynb", sol: "../en/challenges/solutions/07-file-io.md" },
+
+      { id: "ar_08-oop", lang: "ar", num: "08", title: "الفصل 08: البرمجة كائنية التوجه وفئات البيانات", file: "./rendered/ar_08-oop.mp4", size: "0.89 MB", nb: "../ar/part-2-practice/08-oop.ipynb", colab: "https://colab.research.google.com/github/zeiad6/craft-of-selfteaching/blob/main/ar/part-2-practice/08-oop.ipynb", sol: "../ar/challenges/solutions/08-oop.md" },
+      { id: "en_08-oop", lang: "en", num: "08", title: "Chapter 08: Object-Oriented Programming & Dataclasses", file: "./rendered/en_08-oop.mp4", size: "0.60 MB", nb: "../en/part-2-practice/08-oop.ipynb", colab: "https://colab.research.google.com/github/zeiad6/craft-of-selfteaching/blob/main/en/part-2-practice/08-oop.ipynb", sol: "../en/challenges/solutions/08-oop.md" },
+
+      { id: "ar_09-modules", lang: "ar", num: "09", title: "الفصل 09: الوحدات البرمجية والبيئات المعزولة", file: "./rendered/ar_09-modules.mp4", size: "0.68 MB", nb: "../ar/part-2-practice/09-modules.ipynb", colab: "https://colab.research.google.com/github/zeiad6/craft-of-selfteaching/blob/main/ar/part-2-practice/09-modules.ipynb", sol: "../ar/challenges/solutions/09-modules.md" },
+      { id: "en_09-modules", lang: "en", num: "09", title: "Chapter 09: Modules, Packages, and Environments", file: "./rendered/en_09-modules.mp4", size: "0.56 MB", nb: "../en/part-2-practice/09-modules.ipynb", colab: "https://colab.research.google.com/github/zeiad6/craft-of-selfteaching/blob/main/en/part-2-practice/09-modules.ipynb", sol: "../en/challenges/solutions/09-modules.md" },
+
+      { id: "ar_10-debugging-and-testing", lang: "ar", num: "10", title: "الفصل 10: الاختبارات التلقائية والتنقيح", file: "./rendered/ar_10-debugging-and-testing.mp4", size: "0.68 MB", nb: "../ar/part-2-practice/10-debugging-and-testing.ipynb", colab: "https://colab.research.google.com/github/zeiad6/craft-of-selfteaching/blob/main/ar/part-2-practice/10-debugging-and-testing.ipynb", sol: "../ar/challenges/solutions/10-debugging-and-testing.md" },
+      { id: "en_10-debugging-and-testing", lang: "en", num: "10", title: "Chapter 10: Debugging, Exceptions & Testing", file: "./rendered/en_10-debugging-and-testing.mp4", size: "0.54 MB", nb: "../en/part-2-practice/10-debugging-and-testing.ipynb", colab: "https://colab.research.google.com/github/zeiad6/craft-of-selfteaching/blob/main/en/part-2-practice/10-debugging-and-testing.ipynb", sol: "../en/challenges/solutions/10-debugging-and-testing.md" },
+
+      // Part 3
+      { id: "ar_11-reading-docs", lang: "ar", num: "11", title: "الفصل 11: قراءة التوثيق الرسمي باحتراف", file: "./rendered/ar_11-reading-docs.mp4", size: "0.97 MB", nb: "../ar/part-3-mastery/11-reading-docs.ipynb", colab: "https://colab.research.google.com/github/zeiad6/craft-of-selfteaching/blob/main/ar/part-3-mastery/11-reading-docs.ipynb", sol: "../ar/challenges/solutions/11-reading-docs.md" },
+      { id: "en_11-reading-docs", lang: "en", num: "11", title: "Chapter 11: How to Read Official Documentation", file: "./rendered/en_11-reading-docs.mp4", size: "0.84 MB", nb: "../en/part-3-mastery/11-reading-docs.ipynb", colab: "https://colab.research.google.com/github/zeiad6/craft-of-selfteaching/blob/main/en/part-3-mastery/11-reading-docs.ipynb", sol: "../en/challenges/solutions/11-reading-docs.md" },
+
+      { id: "ar_12-beyond-basics", lang: "ar", num: "12", title: "الفصل 12: بناء المشاريع الحقيقية والانطلاق", file: "./rendered/ar_12-beyond-basics.mp4", size: "0.98 MB", nb: "../ar/part-3-mastery/12-beyond-basics.ipynb", colab: "https://colab.research.google.com/github/zeiad6/craft-of-selfteaching/blob/main/ar/part-3-mastery/12-beyond-basics.ipynb", sol: "../ar/challenges/solutions/12-beyond-basics.md" },
+      { id: "en_12-beyond-basics", lang: "en", num: "12", title: "Chapter 12: Building Real Projects Beyond the Basics", file: "./rendered/en_12-beyond-basics.mp4", size: "0.69 MB", nb: "../en/part-3-mastery/12-beyond-basics.ipynb", colab: "https://colab.research.google.com/github/zeiad6/craft-of-selfteaching/blob/main/en/part-3-mastery/12-beyond-basics.ipynb", sol: "../en/challenges/solutions/12-beyond-basics.md" },
+
+      // Appendices
+      { id: "ar_appendix-a-setup", lang: "ar", num: "A", title: "الملحق أ: إعداد بيئة التطوير الحديثة (VS Code)", file: "./rendered/ar_appendix-a-setup.mp4", size: "1.10 MB", nb: "../ar/appendices/01-setup-environment.md", colab: "https://github.com/zeiad6/craft-of-selfteaching/blob/main/ar/appendices/01-setup-environment.md", sol: "../ar/appendices/01-setup-environment.md" },
+      { id: "en_appendix-a-setup", lang: "en", num: "A", title: "Appendix A: Modern Development Setup (VS Code)", file: "./rendered/en_appendix-a-setup.mp4", size: "1.02 MB", nb: "../en/appendices/01-setup-environment.md", colab: "https://github.com/zeiad6/craft-of-selfteaching/blob/main/en/appendices/01-setup-environment.md", sol: "../en/appendices/01-setup-environment.md" },
+
+      { id: "ar_appendix-b-git", lang: "ar", num: "B", title: "الملحق ب: أساسيات Git و GitHub للمتعلم الذاتي", file: "./rendered/ar_appendix-b-git.mp4", size: "1.12 MB", nb: "../ar/appendices/02-git-basics.md", colab: "https://github.com/zeiad6/craft-of-selfteaching/blob/main/ar/appendices/02-git-basics.md", sol: "../ar/appendices/02-git-basics.md" },
+      { id: "en_appendix-b-git", lang: "en", num: "B", title: "Appendix B: Git & GitHub Essentials for Self-Learners", file: "./rendered/en_appendix-b-git.mp4", size: "0.98 MB", nb: "../en/appendices/02-git-basics.md", colab: "https://github.com/zeiad6/craft-of-selfteaching/blob/main/en/appendices/02-git-basics.md", sol: "../en/appendices/02-git-basics.md" }
+    ];
+
+    let currentVideoIdx = 0;
+    let currentFilter = 'all';
+
+    const videoEl = document.getElementById('mainVideo');
+    const sourceEl = document.getElementById('videoSource');
+    const titleEl = document.getElementById('videoTitleText');
+    const langBadgeEl = document.getElementById('videoLangBadge');
+    const sizeBadgeEl = document.getElementById('videoSizeBadge');
+    const playlistContainer = document.getElementById('playlistContainer');
+    const playlistCount = document.getElementById('playlistCount');
+    const searchInput = document.getElementById('searchInput');
+    const filterTabs = document.querySelectorAll('.filter-tab');
+    const speedBtns = document.querySelectorAll('.speed-btn');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    const autoNextCheckbox = document.getElementById('autoNext');
+
+    // Action links
+    const linkColab = document.getElementById('linkColab');
+    const linkGithubPlayer = document.getElementById('linkGithubPlayer');
+    const linkNotebook = document.getElementById('linkNotebook');
+    const linkSolution = document.getElementById('linkSolution');
+    const linkDownload = document.getElementById('linkDownload');
+
+    function renderPlaylist() {
+      const q = searchInput.value.trim().toLowerCase();
+      playlistContainer.innerHTML = '';
+      
+      let visibleCount = 0;
+      CATALOG.forEach((item, idx) => {
+        const matchesFilter = (currentFilter === 'all') || (item.lang === currentFilter);
+        const matchesSearch = item.title.toLowerCase().includes(q) || item.num.toLowerCase().includes(q);
+
+        if (matchesFilter && matchesSearch) {
+          visibleCount++;
+          const card = document.createElement('div');
+          card.className = `playlist-card ${idx === currentVideoIdx ? 'active' : ''}`;
+          card.onclick = () => selectVideo(idx);
+
+          const isArabic = item.lang === 'ar';
+          const flag = isArabic ? '🇸🇦' : '🌐';
+          const langClass = isArabic ? 'badge-ar' : 'badge-en';
+
+          card.innerHTML = `
+            <div class="playlist-num">${item.num}</div>
+            <div class="playlist-info">
+              <div class="playlist-item-title">${item.title}</div>
+              <div class="playlist-meta">
+                <span class="badge ${langClass}">${flag} ${isArabic ? 'عربي' : 'EN'}</span>
+                <span>• ${item.size}</span>
+              </div>
+            </div>
+            <div class="play-indicator"></div>
+          `;
+          playlistContainer.appendChild(card);
+        }
+      });
+
+      playlistCount.textContent = `${visibleCount}/30`;
+    }
+
+    function selectVideo(idx) {
+      currentVideoIdx = idx;
+      const item = CATALOG[idx];
+
+      videoEl.pause();
+      sourceEl.src = item.file;
+      videoEl.load();
+      videoEl.play().catch(() => {});
+
+      titleEl.textContent = item.title;
+      langBadgeEl.textContent = item.lang === 'ar' ? '🇸🇦 العربية' : '🌐 English';
+      langBadgeEl.className = `badge ${item.lang === 'ar' ? 'badge-ar' : 'badge-en'}`;
+      sizeBadgeEl.textContent = item.size;
+
+      // Update action links
+      linkColab.href = item.colab;
+      linkGithubPlayer.href = `https://github.com/zeiad6/craft-of-selfteaching/blob/main/videos/rendered/${item.id}.mp4`;
+      linkNotebook.href = item.nb;
+      linkSolution.href = item.sol;
+      linkDownload.href = item.file;
+
+      renderPlaylist();
+      window.location.hash = `video=${item.id}`;
+    }
+
+    // Controls
+    speedBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        speedBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        videoEl.playbackRate = parseFloat(btn.dataset.speed);
+      });
+    });
+
+    prevBtn.addEventListener('click', () => {
+      if (currentVideoIdx > 0) {
+        selectVideo(currentVideoIdx - 1);
+      }
+    });
+
+    nextBtn.addEventListener('click', () => {
+      if (currentVideoIdx < CATALOG.length - 1) {
+        selectVideo(currentVideoIdx + 1);
+      }
+    });
+
+    videoEl.addEventListener('ended', () => {
+      if (autoNextCheckbox.checked && currentVideoIdx < CATALOG.length - 1) {
+        selectVideo(currentVideoIdx + 1);
+      }
+    });
+
+    filterTabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        filterTabs.forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+        currentFilter = tab.dataset.filter;
+        renderPlaylist();
+      });
+    });
+
+    searchInput.addEventListener('input', renderPlaylist);
+
+    // Initial check for hash
+    const initialHash = window.location.hash;
+    if (initialHash && initialHash.includes('video=')) {
+      const vidId = initialHash.split('video=')[1];
+      const foundIdx = CATALOG.findIndex(i => i.id === vidId);
+      if (foundIdx !== -1) {
+        currentVideoIdx = foundIdx;
+      }
+    }
+
+    selectVideo(currentVideoIdx);
+  </script>
+</body>
+</html>
