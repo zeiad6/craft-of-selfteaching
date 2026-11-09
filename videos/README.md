@@ -66,7 +66,7 @@ python scripts/batch_render_all.py
 
 ---
 
-## 📚 Complete Video Catalog | دليل الفيديوهات الشارحة الكامل (26/26 Ready)
+## 📚 Complete Video Catalog | دليل الفيديوهات الشارحة الكامل (30/30 Ready)
 
 | # | Chapter | 🇸🇦 سيناريو العربية | 🌐 English Script | 🎥 فيديو العربية (MP4) | 🎥 English Video (MP4) |
 | :-: | :-- | :-: | :-: | :-- | :-- |
@@ -77,9 +77,11 @@ python scripts/batch_render_all.py
 | 04 | Data Structures (هياكل البيانات) | [ar](./ar/04-data-structures.md) | [en](./en/04-data-structures.md) | [▶️ ar_04-data-structures.mp4](./rendered/ar_04-data-structures.mp4) | [▶️ en_04-data-structures.mp4](./rendered/en_04-data-structures.mp4) |
 | 05 | Functions (الدوال وتفكيك المشكلات) | [ar](./ar/05-functions.md) | [en](./en/05-functions.md) | [▶️ ar_05-functions.mp4](./rendered/ar_05-functions.mp4) | [▶️ en_05-functions.mp4](./rendered/en_05-functions.mp4) |
 | 06 | Strings & Regex (النصوص والأنماط) | [ar](./ar/06-strings-and-regex.md) | [en](./en/06-strings-and-regex.md) | [▶️ ar_06-strings-and-regex.mp4](./rendered/ar_06-strings-and-regex.mp4) | [▶️ en_06-strings-and-regex.mp4](./rendered/en_06-strings-and-regex.mp4) |
-| 07 | File I/O (الملفات واستدامة البيانات) | [ar](./ar/07-file-io.md) | [en](./en/07-file-io.md) | [▶️ ar_07-file-io.mp4](./rendered/ar_07-file-io.md) | [▶️ en_07-file-io.mp4](./rendered/en_07-file-io.mp4) |
+| 07 | File I/O (الملفات واستدامة البيانات) | [ar](./ar/07-file-io.md) | [en](./en/07-file-io.md) | [▶️ ar_07-file-io.mp4](./rendered/ar_07-file-io.mp4) | [▶️ en_07-file-io.mp4](./rendered/en_07-file-io.mp4) |
 | 08 | OOP (البرمجة كائنية التوجه) | [ar](./ar/08-oop.md) | [en](./en/08-oop.md) | [▶️ ar_08-oop.mp4](./rendered/ar_08-oop.mp4) | [▶️ en_08-oop.mp4](./rendered/en_08-oop.mp4) |
 | 09 | Modules & Ecosystem (الوحدات والمكتبات) | [ar](./ar/09-modules.md) | [en](./en/09-modules.md) | [▶️ ar_09-modules.mp4](./rendered/ar_09-modules.mp4) | [▶️ en_09-modules.mp4](./rendered/en_09-modules.mp4) |
 | 10 | Debugging & Testing (الاختبارات والأخطاء) | [ar](./ar/10-debugging-and-testing.md) | [en](./en/10-debugging-and-testing.md) | [▶️ ar_10-debugging-and-testing.mp4](./rendered/ar_10-debugging-and-testing.mp4) | [▶️ en_10-debugging-and-testing.mp4](./rendered/en_10-debugging-and-testing.mp4) |
 | 11 | Reading Docs (قراءة التوثيق الرسمي) | [ar](./ar/11-reading-docs.md) | [en](./en/11-reading-docs.md) | [▶️ ar_11-reading-docs.mp4](./rendered/ar_11-reading-docs.mp4) | [▶️ en_11-reading-docs.mp4](./rendered/en_11-reading-docs.mp4) |
 | 12 | Beyond Basics (بناء المشاريع الواقعية) | [ar](./ar/12-beyond-basics.md) | [en](./en/12-beyond-basics.md) | [▶️ ar_12-beyond-basics.mp4](./rendered/ar_12-beyond-basics.mp4) | [▶️ en_12-beyond-basics.mp4](./rendered/en_12-beyond-basics.mp4) |
+| A | Appendix A: Setup (إعداد بيئة التطوير) | [ar](./ar/appendix-a-setup.md) | [en](./en/appendix-a-setup.md) | [▶️ ar_appendix-a-setup.mp4](./rendered/ar_appendix-a-setup.mp4) | [▶️ en_appendix-a-setup.mp4](./rendered/en_appendix-a-setup.mp4) |
+| B | Appendix B: Git Basics (أساسيات جيت) | [ar](./ar/appendix-b-git.md) | [en](./en/appendix-b-git.md) | [▶️ ar_appendix-b-git.mp4](./rendered/ar_appendix-b-git.mp4) | [▶️ en_appendix-b-git.mp4](./rendered/en_appendix-b-git.mp4) |

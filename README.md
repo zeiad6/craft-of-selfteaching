@@ -6,7 +6,7 @@
 
 [![Python Version](https://img.shields.io/badge/Python-3.12%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 [![Jupyter](https://img.shields.io/badge/Jupyter-26_Notebooks-F37626?logo=jupyter&logoColor=white)](https://jupyter.org/)
-[![Videos](https://img.shields.io/badge/Videos-26_Rendered_MP4-E11D48?logo=youtube&logoColor=white)](./videos/README.md)
+[![Videos](https://img.shields.io/badge/Videos-30_Rendered_MP4-E11D48?logo=youtube&logoColor=white)](./videos/README.md)
 [![CI Validation](https://github.com/zeiad6/craft-of-selfteaching/actions/workflows/test-notebooks.yml/badge.svg)](https://github.com/zeiad6/craft-of-selfteaching/actions)
 [![License: MIT](https://img.shields.io/badge/License-MIT-10b981.svg)](LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
@@ -105,12 +105,12 @@
 
 ### 📎 الملاحق والمراجع الهندسية الإضافية
 
-| المرجع / الملحق | الوصف | النسخة العربية | English Edition |
-| :-- | :-- | :-: | :-: |
-| **الملحق أ: إعداد بيئة التطوير** | دليل تهيئة VS Code و JupyterLab وأدوات التنسيق (Black / Ruff) | [🇸🇦 تصفح الملحق](./ar/appendices/01-setup-environment.md) | [🌐 View Appendix](./en/appendices/01-setup-environment.md) |
-| **الملحق ب: أساسيات Git & GitHub** | المهارات الضرورية للتحكم في الإصدارات والمساهمة المفتوحة | [🇸🇦 تصفح الملحق](./ar/appendices/02-git-basics.md) | [🌐 View Appendix](./en/appendices/02-git-basics.md) |
-| **مسرد المصطلحات المعتمد** | معجم تقني موحد لأكثر من 100 مصطلح تقني (عربي - إنجليزي) | [🇸🇦 GLOSSARY.md](./ar/GLOSSARY.md) | — |
-| **فهرس التحديات والحلول النموذجية** | 24 تحدياً برمجياً تفاعلياً مع حلول مفصلة ومشروحة بالكامل | [🇸🇦 دليل التحديات](./ar/challenges/README.md) | [🌐 Challenges Hub](./en/challenges/README.md) |
+| المرجع / الملحق | الوصف | النسخة العربية | English Edition | 🎥 فيديو شارح 1080p |
+| :-- | :-- | :-: | :-: | :-: |
+| **الملحق أ: إعداد بيئة التطوير** | دليل تهيئة VS Code و JupyterLab وأدوات التنسيق (Black / Ruff) | [🇸🇦 تصفح الملحق](./ar/appendices/01-setup-environment.md) | [🌐 View Appendix](./en/appendices/01-setup-environment.md) | [▶️ ar](./videos/rendered/ar_appendix-a-setup.mp4) • [▶️ en](./videos/rendered/en_appendix-a-setup.mp4) |
+| **الملحق ب: أساسيات Git & GitHub** | المهارات الضرورية للتحكم في الإصدارات والمساهمة المفتوحة | [🇸🇦 تصفح الملحق](./ar/appendices/02-git-basics.md) | [🌐 View Appendix](./en/appendices/02-git-basics.md) | [▶️ ar](./videos/rendered/ar_appendix-b-git.mp4) • [▶️ en](./videos/rendered/en_appendix-b-git.mp4) |
+| **مسرد المصطلحات المعتمد** | معجم تقني موحد لأكثر من 100 مصطلح تقني (عربي - إنجليزي) | [🇸🇦 GLOSSARY.md](./ar/GLOSSARY.md) | — | — |
+| **فهرس التحديات والحلول النموذجية** | 24 تحدياً برمجياً تفاعلياً مع حلول مفصلة ومشروحة بالكامل | [🇸🇦 دليل التحديات](./ar/challenges/README.md) | [🌐 Challenges Hub](./en/challenges/README.md) | — |
 
 </div>
 

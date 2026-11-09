@@ -501,5 +501,61 @@ CHAPTER_SNIPPETS: dict[str, list[str]] = {
             "for track, stack in specializations.items():\n"
             "    print(f\"🚀 {track}: {', '.join(stack)}\")"
         )
+    ],
+
+    "appendix-a-setup": [
+        (
+            "# 01. Setting up Python 3.12+ Modern Environment\n"
+            "import sys\n"
+            "\n"
+            "print(f\"Platform OS: {sys.platform}\")\n"
+            "print(f\"Active Python: {sys.version.split()[0]}\")\n"
+            "assert sys.version_info >= (3, 12), \"Please upgrade to Python 3.12+\"\n"
+            "# Output: Platform OS: win32 | Active Python: 3.12.x"
+        ),
+        (
+            "# 02. Isolated Virtual Environments with uv\n"
+            "# Fast package management commands in terminal:\n"
+            "# $ pip install uv\n"
+            "# $ uv venv && source .venv/bin/activate\n"
+            "# $ uv pip install -r requirements.txt\n"
+            "print(\"Virtual environment activated and isolated successfully!\")"
+        ),
+        (
+            "# 03. VS Code & JupyterLab Interactive Workflow\n"
+            "# Run cells interactively with Shift+Enter\n"
+            "def verify_developer_stack() -> dict[str, str]:\n"
+            "    return {\"editor\": \"VS Code\", \"kernel\": \"JupyterLab\", \"linter\": \"Ruff\"}\n"
+            "\n"
+            "print(f\"Verified Developer Stack: {verify_developer_stack()}\")"
+        )
+    ],
+
+    "appendix-b-git": [
+        (
+            "# 01. Git Version Control: Tracking Code History\n"
+            "# Essential commands for atomic commits:\n"
+            "# $ git init\n"
+            "# $ git add .\n"
+            "# $ git commit -m 'feat: initial setup for self-teaching'\n"
+            "print(\"Clean repository tree, commit history permanently recorded!\")"
+        ),
+        (
+            "# 02. Branching and Safe Experimentation\n"
+            "# Creating isolated feature branches:\n"
+            "# $ git checkout -b feature/interactive-exercise\n"
+            "def branch_lifecycle() -> str:\n"
+            "    return \"Create Branch -> Test Logic -> Merge to Main\"\n"
+            "\n"
+            "print(f\"Branching Model: {branch_lifecycle()}\")"
+        ),
+        (
+            "# 03. GitHub Collaboration & Pull Requests\n"
+            "# The Open Source Contribution Cycle:\n"
+            "# 1. Fork repository to your profile\n"
+            "# 2. Clone locally and add tests with pytest\n"
+            "# 3. Submit Pull Request to upstream main branch\n"
+            "print(\"Contributing back to the global developer community!\")"
+        )
     ]
 }
