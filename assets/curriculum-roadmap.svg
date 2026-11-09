@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 370" width="1000" height="370">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 375" width="1200" height="375">
   <defs>
     <linearGradient id="bgGradRoadmap" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#070b14"/>
@@ -23,22 +23,17 @@
       <stop offset="0%" stop-color="#059669" stop-opacity="0.2"/>
       <stop offset="100%" stop-color="#047857" stop-opacity="0.06"/>
     </linearGradient>
-
-    <filter id="glowSubtle" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="8" result="blur"/>
-      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
-    </filter>
   </defs>
 
   <style>
     .font-ar { font-family: 'Segoe UI', Tahoma, Arial, sans-serif; }
     .font-en { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
     
-    .phase-title { font-family: 'Segoe UI', Tahoma, sans-serif; font-size: 15px; font-weight: 700; fill: #ffffff; }
-    .phase-sub { font-family: -apple-system, BlinkMacSystemFont, sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 1px; }
-    .item-text { font-family: 'Segoe UI', Tahoma, sans-serif; font-size: 11.5px; fill: #cbd5e1; }
+    .phase-title { font-family: 'Segoe UI', Tahoma, sans-serif; font-size: 16px; font-weight: 700; fill: #ffffff; }
+    .phase-sub { font-family: -apple-system, BlinkMacSystemFont, sans-serif; font-size: 11.5px; font-weight: 700; letter-spacing: 1px; }
+    .item-text { font-family: 'Segoe UI', Tahoma, sans-serif; font-size: 12px; fill: #cbd5e1; }
     .item-bold { font-weight: 700; fill: #ffffff; }
-    .badge-diff { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 10px; font-weight: 700; }
+    .badge-diff { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 10.5px; font-weight: 700; }
     
     @keyframes flowRoadmap {
       from { stroke-dashoffset: 28; }
@@ -58,20 +53,17 @@
       stroke-dasharray: 8 6;
       animation: flowRoadmap 1.2s linear infinite;
     }
-    .pulse-dot {
-      animation: pulsePhase 2.5s ease-in-out infinite;
-    }
   </style>
 
   <!-- Background Canvas -->
-  <rect width="1000" height="370" rx="20" fill="url(#bgGradRoadmap)" stroke="#1e293b" stroke-width="1.5"/>
+  <rect width="1200" height="375" rx="20" fill="url(#bgGradRoadmap)" stroke="#1e293b" stroke-width="1.5"/>
 
   <!-- Top Header Title -->
-  <g transform="translate(500, 36)" text-anchor="middle">
-    <text font-family="'Segoe UI', Tahoma, sans-serif" font-size="18" font-weight="800" fill="#f8fafc">
+  <g transform="translate(600, 36)" text-anchor="middle">
+    <text font-family="'Segoe UI', Tahoma, sans-serif" font-size="19" font-weight="800" fill="#f8fafc">
       🗺️ خارطة المسار التعليمي • 3-Stage Mastery Curriculum Roadmap
     </text>
-    <text y="20" font-family="'Segoe UI', Tahoma, sans-serif" font-size="12" font-weight="500" fill="#94a3b8">
+    <text y="22" font-family="'Segoe UI', Tahoma, sans-serif" font-size="12.5" font-weight="500" fill="#94a3b8">
       مسار تصاعدي مدروس ينقلك من رهبة المجهول إلى الاستقلالية الكاملة وبناء المشاريع
     </text>
   </g>
@@ -79,126 +71,126 @@
   <!-- Animated Connectors between Phases -->
   <!-- Phase 1 to Phase 2 Connector -->
   <g>
-    <path d="M 330 205 L 356 205" stroke="#38bdf8" stroke-width="3" class="flow-line-1"/>
-    <polygon points="364,205 354,200 354,210" fill="#38bdf8"/>
+    <path d="M 398 210 L 420 210" stroke="#38bdf8" stroke-width="3" class="flow-line-1"/>
+    <polygon points="424,210 415,205 415,215" fill="#38bdf8"/>
   </g>
 
   <!-- Phase 2 to Phase 3 Connector -->
   <g>
-    <path d="M 646 205 L 672 205" stroke="#a855f7" stroke-width="3" class="flow-line-2"/>
-    <polygon points="680,205 670,200 670,210" fill="#a855f7"/>
+    <path d="M 778 210 L 800 210" stroke="#a855f7" stroke-width="3" class="flow-line-2"/>
+    <polygon points="804,210 795,205 795,215" fill="#a855f7"/>
   </g>
 
   <!-- ==================== PHASE 1: FOUNDATIONS ==================== -->
-  <g transform="translate(42, 75)">
+  <g transform="translate(45, 75)">
     <!-- Card Frame -->
-    <rect width="285" height="265" rx="14" fill="url(#cardP1)" stroke="#38bdf8" stroke-width="1.5" stroke-opacity="0.7"/>
-    <rect width="285" height="38" rx="14" fill="#0284c7" fill-opacity="0.3"/>
+    <rect width="350" height="270" rx="14" fill="url(#cardP1)" stroke="#38bdf8" stroke-width="1.5" stroke-opacity="0.7"/>
+    <rect width="350" height="40" rx="14" fill="#0284c7" fill-opacity="0.3"/>
     
     <!-- Header of Card 1 -->
-    <circle cx="22" cy="19" r="7" fill="#38bdf8">
-      <animate attributeName="r" values="5;7.5;5" dur="2s" repeatCount="indefinite"/>
+    <circle cx="24" cy="20" r="7.5" fill="#38bdf8">
+      <animate attributeName="r" values="5.5;8;5.5" dur="2s" repeatCount="indefinite"/>
     </circle>
-    <text x="38" y="24" class="phase-title">المرحلة 1: التأسيس والمنطق</text>
-    <text x="268" y="24" text-anchor="end" class="phase-sub" fill="#38bdf8">PART 1</text>
+    <text x="42" y="25" class="phase-title">المرحلة 1: التأسيس والمنطق</text>
+    <text x="330" y="25" text-anchor="end" class="phase-sub" fill="#38bdf8">PART 1</text>
 
     <!-- Scope Badges -->
-    <rect x="16" y="48" width="105" height="20" rx="10" fill="#0f172a" stroke="#38bdf8" stroke-width="1"/>
-    <text x="68" y="62" text-anchor="middle" class="badge-diff" fill="#38bdf8">الفصول 01 - 06</text>
+    <rect x="20" y="50" width="130" height="22" rx="11" fill="#0f172a" stroke="#38bdf8" stroke-width="1"/>
+    <text x="85" y="65" text-anchor="middle" class="badge-diff" fill="#38bdf8">الفصول 01 - 06</text>
     
-    <rect x="130" y="48" width="138" height="20" rx="10" fill="#0f172a" stroke="#10b981" stroke-width="1"/>
-    <text x="199" y="62" text-anchor="middle" class="badge-diff" fill="#34d399">🟢 مبتدئ / Beginner</text>
+    <rect x="160" y="50" width="168" height="22" rx="11" fill="#0f172a" stroke="#10b981" stroke-width="1"/>
+    <text x="244" y="65" text-anchor="middle" class="badge-diff" fill="#34d399">🟢 مبتدئ / Beginner</text>
 
     <!-- Chapter Checklist -->
-    <g transform="translate(16, 92)">
-      <text y="0" class="item-text">⚡ <tspan class="item-bold">01. الانطلاقة الأولى:</tspan> التثبيت وتشغيل الكود</text>
-      <text y="24" class="item-text">🔢 <tspan class="item-bold">02. القيم والمعاملات:</tspan> أنواع البيانات والحساب</text>
-      <text y="48" class="item-text">🔀 <tspan class="item-bold">03. التحكم في التدفق:</tspan> الشروط والتكرار</text>
-      <text y="72" class="item-text">📦 <tspan class="item-bold">04. هياكل البيانات:</tspan> القوائم والقواميس</text>
-      <text y="96" class="item-text">🧩 <tspan class="item-bold">05. الدوال والتجريد:</tspan> تفكيك المشكلات</text>
-      <text y="120" class="item-text">📝 <tspan class="item-bold">06. النصوص والأنماط:</tspan> Regex والسلاسل</text>
+    <g transform="translate(20, 95)">
+      <text y="0" class="item-text">⚡ <tspan class="item-bold">01. الانطلاقة الأولى:</tspan> التثبيت وتشغيل الكود بدقة</text>
+      <text y="24" class="item-text">🔢 <tspan class="item-bold">02. القيم والمعاملات:</tspan> أنواع البيانات والعمليات الحسابية</text>
+      <text y="48" class="item-text">🔀 <tspan class="item-bold">03. التحكم في التدفق:</tspan> الشروط وحلقات التكرار</text>
+      <text y="72" class="item-text">📦 <tspan class="item-bold">04. هياكل البيانات:</tspan> القوائم والقواميس والمجموعات</text>
+      <text y="96" class="item-text">🧩 <tspan class="item-bold">05. الدوال والتجريد:</tspan> تفكيك المشكلات وتحديد النطاق</text>
+      <text y="120" class="item-text">📝 <tspan class="item-bold">06. النصوص والأنماط:</tspan> صياغة السلاسل والتعابير النمطية</text>
     </g>
 
     <!-- Bottom Metric -->
-    <rect x="12" y="234" width="261" height="22" rx="6" fill="#0f172a" fill-opacity="0.8"/>
-    <text x="142" y="249" text-anchor="middle" font-family="'Segoe UI', Tahoma, sans-serif" font-size="10.5" fill="#94a3b8">
-      🎯 الهدف: التفكير كالحاسوب وكسر حاجز كتابة الكود
+    <rect x="15" y="236" width="320" height="24" rx="7" fill="#0f172a" fill-opacity="0.85"/>
+    <text x="175" y="252" text-anchor="middle" font-family="'Segoe UI', Tahoma, sans-serif" font-size="11" fill="#94a3b8">
+      🎯 الهدف: فهم منطق الآلة وكسر حاجز كتابة الأكواد
     </text>
   </g>
 
   <!-- ==================== PHASE 2: PRACTICE & ENGINEERING ==================== -->
-  <g transform="translate(357, 75)">
+  <g transform="translate(425, 75)">
     <!-- Card Frame -->
-    <rect width="285" height="265" rx="14" fill="url(#cardP2)" stroke="#a855f7" stroke-width="1.5" stroke-opacity="0.7"/>
-    <rect width="285" height="38" rx="14" fill="#7c3aed" fill-opacity="0.3"/>
+    <rect width="350" height="270" rx="14" fill="url(#cardP2)" stroke="#a855f7" stroke-width="1.5" stroke-opacity="0.7"/>
+    <rect width="350" height="40" rx="14" fill="#7c3aed" fill-opacity="0.3"/>
 
     <!-- Header of Card 2 -->
-    <circle cx="22" cy="19" r="7" fill="#a855f7">
-      <animate attributeName="r" values="5;7.5;5" dur="2s" repeatCount="indefinite"/>
+    <circle cx="24" cy="20" r="7.5" fill="#a855f7">
+      <animate attributeName="r" values="5.5;8;5.5" dur="2s" repeatCount="indefinite"/>
     </circle>
-    <text x="38" y="24" class="phase-title">المرحلة 2: التطبيق والهندسة</text>
-    <text x="268" y="24" text-anchor="end" class="phase-sub" fill="#c084fc">PART 2</text>
+    <text x="42" y="25" class="phase-title">المرحلة 2: التطبيق والهندسة</text>
+    <text x="330" y="25" text-anchor="end" class="phase-sub" fill="#c084fc">PART 2</text>
 
     <!-- Scope Badges -->
-    <rect x="16" y="48" width="105" height="20" rx="10" fill="#0f172a" stroke="#a855f7" stroke-width="1"/>
-    <text x="68" y="62" text-anchor="middle" class="badge-diff" fill="#c084fc">الفصول 07 - 10</text>
+    <rect x="20" y="50" width="130" height="22" rx="11" fill="#0f172a" stroke="#a855f7" stroke-width="1"/>
+    <text x="85" y="65" text-anchor="middle" class="badge-diff" fill="#c084fc">الفصول 07 - 10</text>
 
-    <rect x="130" y="48" width="138" height="20" rx="10" fill="#0f172a" stroke="#f59e0b" stroke-width="1"/>
-    <text x="199" y="62" text-anchor="middle" class="badge-diff" fill="#fbbf24">🟡 متوسط / Intermediate</text>
+    <rect x="160" y="50" width="168" height="22" rx="11" fill="#0f172a" stroke="#f59e0b" stroke-width="1"/>
+    <text x="244" y="65" text-anchor="middle" class="badge-diff" fill="#fbbf24">🟡 متوسط / Intermediate</text>
 
     <!-- Chapter Checklist -->
-    <g transform="translate(16, 92)">
-      <text y="0" class="item-text">💾 <tspan class="item-bold">07. الملفات والبيانات:</tspan> File I/O &amp; JSON</text>
-      <text y="24" class="item-text">🏗️ <tspan class="item-bold">08. الكائنات (OOP):</tspan> الأصناف والوراثة</text>
-      <text y="48" class="item-text">📦 <tspan class="item-bold">09. الوحدات والحزم:</tspan> بنية المشاريع و pip</text>
-      <text y="72" class="item-text">🧪 <tspan class="item-bold">10. الاختبارات والتنقيح:</tspan> pytest &amp; Debug</text>
-      <text y="105" font-family="'Segoe UI', Tahoma, sans-serif" font-size="11" fill="#c4b5fd">
-        💡 نقلة نوعية من السطور المنفردة إلى الأنظمة المتكاملة
+    <g transform="translate(20, 95)">
+      <text y="0" class="item-text">💾 <tspan class="item-bold">07. الملفات والبيانات:</tspan> استدامة الملفات و JSON</text>
+      <text y="24" class="item-text">🏗️ <tspan class="item-bold">08. الكائنات (OOP):</tspan> الأصناف والوراثة والتغليف</text>
+      <text y="48" class="item-text">📦 <tspan class="item-bold">09. الوحدات والحزم:</tspan> تنظيم المشاريع وتوزيع الحزم</text>
+      <text y="72" class="item-text">🧪 <tspan class="item-bold">10. الاختبارات والتنقيح:</tspan> pytest وفحص الأخطاء</text>
+      <text y="106" font-family="'Segoe UI', Tahoma, sans-serif" font-size="11.5" fill="#c4b5fd">
+        💡 نقلة نوعية من السطور المنفردة إلى الأنظمة البرمجية المتكاملة
       </text>
     </g>
 
     <!-- Bottom Metric -->
-    <rect x="12" y="234" width="261" height="22" rx="6" fill="#0f172a" fill-opacity="0.8"/>
-    <text x="142" y="249" text-anchor="middle" font-family="'Segoe UI', Tahoma, sans-serif" font-size="10.5" fill="#94a3b8">
-      🎯 الهدف: تنظيم الكود وبناء برمجيات متينة قابلة للتطوير
+    <rect x="15" y="236" width="320" height="24" rx="7" fill="#0f172a" fill-opacity="0.85"/>
+    <text x="175" y="252" text-anchor="middle" font-family="'Segoe UI', Tahoma, sans-serif" font-size="11" fill="#94a3b8">
+      🎯 الهدف: كتابة برمجيات متينة وقابلة للصيانة والتطوير
     </text>
   </g>
 
   <!-- ==================== PHASE 3: MASTERY & AUTONOMY ==================== -->
-  <g transform="translate(672, 75)">
+  <g transform="translate(805, 75)">
     <!-- Card Frame -->
-    <rect width="285" height="265" rx="14" fill="url(#cardP3)" stroke="#34d399" stroke-width="1.5" stroke-opacity="0.7"/>
-    <rect width="285" height="38" rx="14" fill="#059669" fill-opacity="0.3"/>
+    <rect width="350" height="270" rx="14" fill="url(#cardP3)" stroke="#34d399" stroke-width="1.5" stroke-opacity="0.7"/>
+    <rect width="350" height="40" rx="14" fill="#059669" fill-opacity="0.3"/>
 
     <!-- Header of Card 3 -->
-    <circle cx="22" cy="19" r="7" fill="#34d399">
-      <animate attributeName="r" values="5;7.5;5" dur="2s" repeatCount="indefinite"/>
+    <circle cx="24" cy="20" r="7.5" fill="#34d399">
+      <animate attributeName="r" values="5.5;8;5.5" dur="2s" repeatCount="indefinite"/>
     </circle>
-    <text x="38" y="24" class="phase-title">المرحلة 3: الاستقلالية والإتقان</text>
-    <text x="268" y="24" text-anchor="end" class="phase-sub" fill="#34d399">PART 3</text>
+    <text x="42" y="25" class="phase-title">المرحلة 3: الاستقلالية والإتقان</text>
+    <text x="330" y="25" text-anchor="end" class="phase-sub" fill="#34d399">PART 3</text>
 
     <!-- Scope Badges -->
-    <rect x="16" y="48" width="105" height="20" rx="10" fill="#0f172a" stroke="#34d399" stroke-width="1"/>
-    <text x="68" y="62" text-anchor="middle" class="badge-diff" fill="#34d399">الفصول 11 - 12</text>
+    <rect x="20" y="50" width="130" height="22" rx="11" fill="#0f172a" stroke="#34d399" stroke-width="1"/>
+    <text x="85" y="65" text-anchor="middle" class="badge-diff" fill="#34d399">الفصول 11 - 12</text>
 
-    <rect x="130" y="48" width="138" height="20" rx="10" fill="#0f172a" stroke="#f43f5e" stroke-width="1"/>
-    <text x="199" y="62" text-anchor="middle" class="badge-diff" fill="#fb7185">🔴 متقدم / Mastery</text>
+    <rect x="160" y="50" width="168" height="22" rx="11" fill="#0f172a" stroke="#f43f5e" stroke-width="1"/>
+    <text x="244" y="65" text-anchor="middle" class="badge-diff" fill="#fb7185">🔴 متقدم / Mastery</text>
 
     <!-- Chapter Checklist -->
-    <g transform="translate(16, 92)">
-      <text y="0" class="item-text">📚 <tspan class="item-bold">11. قراءة التوثيق الرسمي:</tspan> سر استقلالية المطور</text>
-      <text y="24" class="item-text">🚀 <tspan class="item-bold">12. بناء المشاريع الحقيقية:</tspan> من الفكرة للنشر</text>
-      <text y="48" class="item-text">🛠️ <tspan class="item-bold">الملحق أ:</tspan> تجهيز بيئة VS Code و JupyterLab</text>
-      <text y="72" class="item-text">🌿 <tspan class="item-bold">الملحق ب:</tspan> أساسيات Git و GitHub للمتعلم</text>
-      <text y="105" font-family="'Segoe UI', Tahoma, sans-serif" font-size="11" fill="#6ee7b7">
-        🌟 التحرر من التبعية للدروس واكتساب مهارة التعلّم الأبدي
+    <g transform="translate(20, 95)">
+      <text y="0" class="item-text">📚 <tspan class="item-bold">11. قراءة التوثيق الرسمي:</tspan> سر استقلالية المطور الكبار</text>
+      <text y="24" class="item-text">🚀 <tspan class="item-bold">12. بناء المشاريع الحقيقية:</tspan> هندسة المنتجات من الصفر</text>
+      <text y="48" class="item-text">🛠️ <tspan class="item-bold">الملحق أ:</tspan> تهيئة بيئة التطوير الحديثة (VS Code)</text>
+      <text y="72" class="item-text">🌿 <tspan class="item-bold">الملحق ب:</tspan> أساسيات Git و GitHub للمتعلم الذاتي</text>
+      <text y="106" font-family="'Segoe UI', Tahoma, sans-serif" font-size="11.5" fill="#6ee7b7">
+        🌟 التحرر من التبعية للشروحات واكتساب مهارة التعلّم الأبدي
       </text>
     </g>
 
     <!-- Bottom Metric -->
-    <rect x="12" y="234" width="261" height="22" rx="6" fill="#0f172a" fill-opacity="0.8"/>
-    <text x="142" y="249" text-anchor="middle" font-family="'Segoe UI', Tahoma, sans-serif" font-size="10.5" fill="#94a3b8">
-      🎯 الهدف: امتلاك مهارة تعلّم أي تقنية جديدة ذاتياً
+    <rect x="15" y="236" width="320" height="24" rx="7" fill="#0f172a" fill-opacity="0.85"/>
+    <text x="175" y="252" text-anchor="middle" font-family="'Segoe UI', Tahoma, sans-serif" font-size="11" fill="#94a3b8">
+      🎯 الهدف: امتلاك القدرة على تعلّم أي تقنية جديدة ذاتياً
     </text>
   </g>
 </svg>
