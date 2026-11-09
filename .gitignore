@@ -25,3 +25,7 @@ Thumbs.db
 
 # Generated narration (videos/)
 videos/output/
+
+# Intermediate video render cache
+videos/rendered/ar/*/
+videos/rendered/en/*/
