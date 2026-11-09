@@ -2,17 +2,17 @@
 
 <img src="./assets/banner.svg" alt="The Craft of Self-Teaching | فن التعلّم الذاتي" width="100%">
 
-# 📚 فن التعلّم الذاتي | The Craft of Self-Teaching
-### دليل عملي لاكتساب مهارة التعلّم الذاتي عبر البرمجة بلغة Python (محدّث لـ Python 3.12+)
-*A Modernized, Bilingual Edition of the Open-Source Classic on Self-Teaching & Python Programming*
+<br/>
 
-[![Python Version](https://img.shields.io/badge/Python-3.12%2B-blue?logo=python&logoColor=white)](https://www.python.org/)
-[![Jupyter](https://img.shields.io/badge/Jupyter-Notebooks-orange?logo=jupyter&logoColor=white)](https://jupyter.org/)
+[![Python Version](https://img.shields.io/badge/Python-3.12%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
+[![Jupyter](https://img.shields.io/badge/Jupyter-Notebooks-F37626?logo=jupyter&logoColor=white)](https://jupyter.org/)
 [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-10b981.svg)](LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
-[**🇸🇦 النسخة العربية**](./ar/README.md) | [**🌐 English Edition**](./en/README.md)
+<br/>
+
+**[🇸🇦 تصفح النسخة العربية كاملةً](./ar/README.md)** &nbsp;&nbsp;•&nbsp;&nbsp; **[🌐 Explore English Edition](./en/README.md)**
 
 </div>
 
@@ -30,7 +30,8 @@
 ### ✨ ما الجديد في هذه النسخة المعرّبة والمطوّرة؟
 - **ترجمة عربية تقنية رصينة:** صياغة عربية سلسة تحافظ على روح الكتاب الفلسفية مع إبقاء المصطلحات التقنية الإنجليزية بين قوسين لربط القارئ بسوق العمل العالمي.
 - **تحديث شامل لـ Python 3.12+:** مراجعة كافة الأكواد لتواكب أحدث ميزات بايثون (مثل تحسينات `f-strings`، تلميحات الأنواع الحديثة `Type Hints`، ورسائل الأخطاء المحدّثة).
-- **تحديات برمجية تطبيقية (Coding Challenges):** تمارين عملية متدرجة الصعوبة في نهاية كل فصل مع حلولها النموذجية.
+- **تحديات برمجية تطبيقية (Coding Challenges):** تمارين عملية متدرجة الصعوبة في نهاية كل فصل مع حلول نموذجية مفصولة في [مجلد الحلول](./ar/challenges/solutions/).
+- **أقسام بيداغوجية تفاعلية:** أخطاء شائعة، نصائح تعلّم ذاتي، ملخصات ومسارد، واختبارات ذاتية تفاعلية داخل كل فصل.
 - **بيئة عمل عصرية:** شروحات محدّثة لأحدث إصدارات **VS Code**، **JupyterLab**، ومديري الحزم الحديثين مثل `uv`.
 
 ---
@@ -59,11 +60,11 @@
 - [الفصل 11: كيف تقرأ التوثيق الرسمي (Official Documentation)؟](./ar/part-3-mastery/11-reading-docs.ipynb)
 - [الفصل 12: بناء المشاريع الحقيقية وما بعد الأساسيات](./ar/part-3-mastery/12-beyond-basics.ipynb)
 
-#### 📎 الملاحق والتحديات
+#### 📎 الملاحق والتحديات والوسائط
 - [الملحق أ: إعداد بيئة العمل الحديثة (VS Code + JupyterLab + Python 3.12+)](./ar/appendices/01-setup-environment.md)
 - [الملحق ب: أساسيات Git و GitHub للمتعلم الذاتي](./ar/appendices/02-git-basics.md)
 - [💡 بنك التحديات البرمجية وحلولها](./ar/challenges/README.md)
-- [🎬 سيناريوهات الفيديو الشارحة](./videos/README.md)
+- [🎬 سيناريوهات الفيديو الشارحة ودليل الإنتاج](./videos/README.md)
 
 ---
 
@@ -117,8 +118,9 @@ This repository offers a modernized, globally accessible English edition (alongs
 ### ✨ What's New in This Modernized Edition?
 - **Professional Technical Translation:** Idiomatic English and Arabic translations that preserve the philosophical depth and practical wisdom of the original work.
 - **Updated for Python 3.12+:** All code examples, type annotations, standard library usage, and error-handling sections have been modernized for Python 3.12+.
-- **Interactive Coding Challenges:** End-of-chapter hands-on exercises and reference solutions to reinforce active learning.
-- **Modern Tooling Guides:** Updated appendices covering modern **VS Code** workflows, **JupyterLab**, and fast Python package management.
+- **Interactive Coding Challenges:** End-of-chapter hands-on exercises with reference solutions decoupled in [solutions/](./en/challenges/solutions/).
+- **Pedagogical Enrichment:** Common mistakes, self-teaching insights, key terms, and interactive quizzes in every single chapter.
+- **Modern Tooling Guides:** Updated appendices covering modern **VS Code** workflows, **JupyterLab**, and fast Python package management with `uv`.
 
 ---
 
@@ -146,11 +148,11 @@ This repository offers a modernized, globally accessible English edition (alongs
 - [Chapter 11: How to Read Official Documentation](./en/part-3-mastery/11-reading-docs.ipynb)
 - [Chapter 12: Building Real Projects & Moving Beyond the Basics](./en/part-3-mastery/12-beyond-basics.ipynb)
 
-#### 📎 Appendices & Coding Challenges
+#### 📎 Appendices & Media
 - [Appendix A: Modern Development Setup (VS Code, JupyterLab, Python 3.12+)](./en/appendices/01-setup-environment.md)
 - [Appendix B: Git & GitHub Essentials for Self-Learners](./en/appendices/02-git-basics.md)
 - [💡 Coding Challenges & Reference Solutions](./en/challenges/README.md)
-- [🎬 Explainer Video Scripts](./videos/README.md)
+- [🎬 Explainer Video Scripts & Production Guide](./videos/README.md)
 
 ---
 
@@ -176,5 +178,5 @@ Contributions from developers, educators, and translators are warmly welcome! Wh
 
 ### 📜 Credits & Attribution (حفظ الحقوق)
 - **Original Author:** [Li Xiaolai (李笑来)](https://github.com/selfteaching/the-craft-of-selfteaching) — Creator of the original Chinese open-source book *The Craft of Self-Teaching (自学是门手艺)*.
-- **Translation, Modernization & Maintenance:** Translated into Arabic & English, updated for Python 3.12+, and maintained by **Ziad**.
+- **Translation, Modernization & Maintenance:** Translated into Arabic & English, updated for Python 3.12+, and maintained by **Ziad** ([@zeiad6](https://github.com/zeiad6)).
 - **License:** Distributed under the [MIT License](./LICENSE) in accordance with the open-source spirit of the original project.

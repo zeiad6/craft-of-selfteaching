@@ -1,6 +1,8 @@
 <div align="center">
 
-<img src="../assets/banner.svg" alt="The Craft of Self-Teaching" width="100%">
+<img src="../assets/banner.svg" alt="The Craft of Self-Teaching | فن التعلّم الذاتي" width="100%">
+
+[**🇸🇦 انتقل إلى النسخة العربية**](../ar/README.md) • [**🏠 Root Repository**](../README.md)
 
 </div>
 
@@ -40,3 +42,4 @@ Welcome to the modernized English edition of **"The Craft of Self-Teaching"**, f
 - [Appendix A: Modern Development Setup (VS Code, JupyterLab, Python 3.12+)](./appendices/01-setup-environment.md)
 - [Appendix B: Git & GitHub Essentials for Self-Learners](./appendices/02-git-basics.md)
 - [💡 Coding Challenges & Reference Solutions](./challenges/README.md)
+- [🎬 Explainer Video Scripts](../videos/README.md)

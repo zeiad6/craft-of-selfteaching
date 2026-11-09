@@ -1,12 +1,14 @@
-<div dir="rtl">
-
 <div align="center">
 
-<img src="../assets/banner.svg" alt="The Craft of Self-Teaching" width="100%">
+<img src="../assets/banner.svg" alt="The Craft of Self-Teaching | فن التعلّم الذاتي" width="100%">
+
+[**🌐 Switch to English Edition**](../en/README.md) • [**🏠 المستودع الرئيسي**](../README.md)
 
 </div>
 
 ---
+
+<div dir="rtl">
 
 # 🇸🇦 فن التعلّم الذاتي — الفهرس الكامل للنسخة العربية
 
@@ -42,5 +44,6 @@
 - [الملحق أ: إعداد بيئة العمل الحديثة (VS Code + JupyterLab + Python 3.12+)](./appendices/01-setup-environment.md)
 - [الملحق ب: أساسيات Git و GitHub للمتعلم الذاتي](./appendices/02-git-basics.md)
 - [💡 بنك التحديات البرمجية وحلولها النموذجية](./challenges/README.md)
+- [🎬 سيناريوهات الفيديو الشارحة](../videos/README.md)
 
 </div>
