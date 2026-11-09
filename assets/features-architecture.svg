@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 240" width="1000" height="240">
+  <defs>
+    <linearGradient id="featBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19"/>
+      <stop offset="50%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#111827"/>
+    </linearGradient>
+
+    <!-- Glowing Accents -->
+    <linearGradient id="glowBorder1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+
+    <linearGradient id="glowBorder2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+
+    <linearGradient id="glowBorder3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a855f7"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+
+    <linearGradient id="glowBorder4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+  </defs>
+
+  <style>
+    .feat-title { font-family: 'Segoe UI', Tahoma, Arial, sans-serif; font-size: 14.5px; font-weight: 700; fill: #ffffff; }
+    .feat-sub { font-family: -apple-system, BlinkMacSystemFont, sans-serif; font-size: 11px; font-weight: 600; }
+    .feat-desc { font-family: 'Segoe UI', Tahoma, sans-serif; font-size: 11.5px; fill: #94a3b8; }
+    .feat-badge { font-family: -apple-system, sans-serif; font-size: 10px; font-weight: 700; }
+    
+    @keyframes pulseGlow {
+      0%, 100% { opacity: 0.7; }
+      50% { opacity: 1; }
+    }
+    
+    .pulse-glow {
+      animation: pulseGlow 3s ease-in-out infinite;
+    }
+  </style>
+
+  <!-- Background Canvas -->
+  <rect width="1000" height="240" rx="16" fill="url(#featBg)" stroke="#1e293b" stroke-width="1.5"/>
+
+  <!-- Card 1: Modern Python 3.12+ -->
+  <g transform="translate(25, 25)">
+    <rect width="220" height="190" rx="12" fill="#1e293b" fill-opacity="0.4" stroke="url(#glowBorder1)" stroke-width="1.5"/>
+    <circle cx="32" cy="34" r="18" fill="#0284c7" fill-opacity="0.2" stroke="#38bdf8" stroke-width="1.2"/>
+    <text x="32" y="40" text-anchor="middle" font-size="18">🐍</text>
+    <text x="62" y="32" class="feat-title">بايثون الحديثة 3.12+</text>
+    <text x="62" y="48" class="feat-sub" fill="#38bdf8">Modern Python Core</text>
+    <line x1="20" y1="68" x2="200" y2="68" stroke="#334155" stroke-width="1"/>
+    <text x="20" y="94" class="feat-desc">• تلميحات الأنواع (Type Hints)</text>
+    <text x="20" y="118" class="feat-desc">• مطابقة الأنماط (match/case)</text>
+    <text x="20" y="142" class="feat-desc">• f-strings الحديثة و pathlib</text>
+    <text x="20" y="166" class="feat-desc">• فئات البيانات (@dataclass)</text>
+  </g>
+
+  <!-- Card 2: Interactive Notebooks & Colab -->
+  <g transform="translate(268, 25)">
+    <rect width="220" height="190" rx="12" fill="#1e293b" fill-opacity="0.4" stroke="url(#glowBorder2)" stroke-width="1.5"/>
+    <circle cx="32" cy="34" r="18" fill="#d97706" fill-opacity="0.2" stroke="#f59e0b" stroke-width="1.2"/>
+    <text x="32" y="40" text-anchor="middle" font-size="18">📓</text>
+    <text x="62" y="32" class="feat-title">26 دفتراً تفاعلياً</text>
+    <text x="62" y="48" class="feat-sub" fill="#fbbf24">JupyterLab &amp; Colab</text>
+    <line x1="20" y1="68" x2="200" y2="68" stroke="#334155" stroke-width="1"/>
+    <text x="20" y="94" class="feat-desc">• تشغيل فوري بنقرة واحدة سحابياً</text>
+    <text x="20" y="118" class="feat-desc">• تدعم JupyterLab و VS Code</text>
+    <text x="20" y="142" class="feat-desc">• بيئة خالية من التثبيت المسبق</text>
+    <text x="20" y="166" class="feat-desc">• متوافقة 100% مع Python 3.12</text>
+  </g>
+
+  <!-- Card 3: Active Learning Framework -->
+  <g transform="translate(512, 25)">
+    <rect width="220" height="190" rx="12" fill="#1e293b" fill-opacity="0.4" stroke="url(#glowBorder3)" stroke-width="1.5"/>
+    <circle cx="32" cy="34" r="18" fill="#7c3aed" fill-opacity="0.2" stroke="#a855f7" stroke-width="1.2"/>
+    <text x="32" y="40" text-anchor="middle" font-size="18">🧠</text>
+    <text x="62" y="32" class="feat-title">تعليم بيداغوجي نشط</text>
+    <text x="62" y="48" class="feat-sub" fill="#c084fc">Active Pedagogy</text>
+    <line x1="20" y1="68" x2="200" y2="68" stroke="#334155" stroke-width="1"/>
+    <text x="20" y="94" class="feat-desc">• أخطاء برمجية شائعة مع الشرح</text>
+    <text x="20" y="118" class="feat-desc">• نصائح استراتيجية للتعلّم الذاتي</text>
+    <text x="20" y="142" class="feat-desc">• تحديات مستقلة بدون حرق الحل</text>
+    <text x="20" y="166" class="feat-desc">• مسرد مصطلحات ثنائي اللغة</text>
+  </g>
+
+  <!-- Card 4: Video Masteries -->
+  <g transform="translate(755, 25)">
+    <rect width="220" height="190" rx="12" fill="#1e293b" fill-opacity="0.4" stroke="url(#glowBorder4)" stroke-width="1.5"/>
+    <circle cx="32" cy="34" r="18" fill="#059669" fill-opacity="0.2" stroke="#10b981" stroke-width="1.2"/>
+    <text x="32" y="40" text-anchor="middle" font-size="18">🎬</text>
+    <text x="62" y="32" class="feat-title">26 فيديو شارح (1080p)</text>
+    <text x="62" y="48" class="feat-sub" fill="#34d399">Automated Studio Engine</text>
+    <line x1="20" y1="68" x2="200" y2="68" stroke="#334155" stroke-width="1"/>
+    <text x="20" y="94" class="feat-desc">• تعليق صوتي استوديو بـ Edge-TTS</text>
+    <text x="20" y="118" class="feat-desc">• واجهات Terminal بصرية أنيقة</text>
+    <text x="20" y="142" class="feat-desc">• إنتاج مؤتمت بالكامل بـ FFmpeg</text>
+    <text x="20" y="166" class="feat-desc">• سكريبتات مفتوحة وقابلة للتعديل</text>
+  </g>
+</svg>
