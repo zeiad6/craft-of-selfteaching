@@ -75,6 +75,198 @@ python scripts/batch_render_all.py
 
 ---
 
+## 🍿 صالة العرض والمشاهدة المباشرة في المستودع (Native In-Repo Video Theater)
+
+يمكنك مشاهدة أي فيديو مباشرة هنا على GitHub بنقرة واحدة:
+
+### 🇸🇦 الفيديوهات باللغة العربية (15 فيديو)
+
+<details>
+<summary><b>▶️ المقدمة: فلسفة التعلّم الذاتي كحرفة حياة (1080p MP4)</b></summary>
+
+https://github.com/user-attachments/assets/13d62d86-aabf-47a9-8c4d-df52f1fb8dfe
+
+</details>
+<details>
+<summary><b>▶️ الفصل 01: الانطلاقة الأولى والقراءة الدقيقة (1080p MP4)</b></summary>
+
+https://github.com/user-attachments/assets/2320d37b-7123-42eb-8dcb-5064528994d5
+
+</details>
+<details>
+<summary><b>▶️ الفصل 02: القيم والمتغيرات والمعاملات (1080p MP4)</b></summary>
+
+https://github.com/user-attachments/assets/844499a7-3e09-4d16-818a-487b83bc6bb8
+
+</details>
+<details>
+<summary><b>▶️ الفصل 03: التحكم في التدفق ومطابقة الأنماط (1080p MP4)</b></summary>
+
+https://github.com/user-attachments/assets/d569e9e3-8667-49a7-8b66-6cb45d4e3471
+
+</details>
+<details>
+<summary><b>▶️ الفصل 04: هياكل البيانات والقوائم والقواميس (1080p MP4)</b></summary>
+
+https://github.com/user-attachments/assets/90c34fd7-0709-4937-aa4e-c16767954c33
+
+</details>
+<details>
+<summary><b>▶️ الفصل 05: الدوال وتفكيك المشكلات والمولدات (1080p MP4)</b></summary>
+
+https://github.com/user-attachments/assets/0539d6ce-6231-4ea8-9a6f-b36b37696800
+
+</details>
+<details>
+<summary><b>▶️ الفصل 06: النصوص والتنسيق والتعابير النمطية (1080p MP4)</b></summary>
+
+https://github.com/user-attachments/assets/91c0a937-965e-4209-a7ef-59786762e001
+
+</details>
+<details>
+<summary><b>▶️ الفصل 07: التعامل مع الملفات واستدامة البيانات (1080p MP4)</b></summary>
+
+https://github.com/user-attachments/assets/17ff9516-9fee-4da0-b42c-542ca46c1c9f
+
+</details>
+<details>
+<summary><b>▶️ الفصل 08: البرمجة كائنية التوجه وفئات البيانات (1080p MP4)</b></summary>
+
+https://github.com/user-attachments/assets/570dd092-0fe5-49d7-8fdc-8d3f9b9617e3
+
+</details>
+<details>
+<summary><b>▶️ الفصل 09: الوحدات البرمجية والبيئات المعزولة (1080p MP4)</b></summary>
+
+https://github.com/user-attachments/assets/795e86b1-abcd-4f9b-ae49-7f132faf5a72
+
+</details>
+<details>
+<summary><b>▶️ الفصل 10: الاختبارات التلقائية والتنقيح (1080p MP4)</b></summary>
+
+https://github.com/user-attachments/assets/bc312277-b394-47ba-a7ea-164e6aec6426
+
+</details>
+<details>
+<summary><b>▶️ الفصل 11: قراءة التوثيق الرسمي باحتراف (1080p MP4)</b></summary>
+
+https://github.com/user-attachments/assets/0cf82040-db9f-4d90-826e-78ec26284c9d
+
+</details>
+<details>
+<summary><b>▶️ الفصل 12: بناء المشاريع الحقيقية والانطلاق (1080p MP4)</b></summary>
+
+https://github.com/user-attachments/assets/acb71d47-9d21-45bb-b3dd-3d68c7276649
+
+</details>
+<details>
+<summary><b>▶️ الملحق أ: إعداد بيئة التطوير الحديثة (VS Code) (1080p MP4)</b></summary>
+
+https://github.com/user-attachments/assets/4ce1e587-ea6a-4580-bc5a-df3802b25c10
+
+</details>
+<details>
+<summary><b>▶️ الملحق ب: أساسيات Git و GitHub للمتعلم الذاتي (1080p MP4)</b></summary>
+
+https://github.com/user-attachments/assets/28606c90-133c-412e-8b98-03806acded11
+
+</details>
+
+### 🌐 English Explainer Videos (15 Videos)
+
+<details>
+<summary><b>▶️ Preface: Self-Teaching as a Lifelong Craft (1080p MP4)</b></summary>
+
+https://github.com/user-attachments/assets/d671c5c7-92d9-4447-a301-f1bb7026714b
+
+</details>
+<details>
+<summary><b>▶️ Chapter 01: Getting Started & Careful Reading (1080p MP4)</b></summary>
+
+https://github.com/user-attachments/assets/e1e6568e-974b-4051-bfd7-667e50421cd4
+
+</details>
+<details>
+<summary><b>▶️ Chapter 02: Values, Variables, and Operators (1080p MP4)</b></summary>
+
+https://github.com/user-attachments/assets/ff0d9f7f-08ee-4e7d-afcf-d41d2b807525
+
+</details>
+<details>
+<summary><b>▶️ Chapter 03: Control Flow & Pattern Matching (1080p MP4)</b></summary>
+
+https://github.com/user-attachments/assets/96da15ba-e403-4e02-98e2-993e0e844818
+
+</details>
+<details>
+<summary><b>▶️ Chapter 04: Core Data Structures & Comprehensions (1080p MP4)</b></summary>
+
+https://github.com/user-attachments/assets/4b584012-e1f9-4382-a5cc-c5c26ceda59b
+
+</details>
+<details>
+<summary><b>▶️ Chapter 05: Functions, Decomposition & Generators (1080p MP4)</b></summary>
+
+https://github.com/user-attachments/assets/f8b7f3f8-9085-4c06-9372-61bc58128348
+
+</details>
+<details>
+<summary><b>▶️ Chapter 06: Strings, Formatting, and Regex (1080p MP4)</b></summary>
+
+https://github.com/user-attachments/assets/0ea108de-9f00-4c1e-ab43-baae501aa703
+
+</details>
+<details>
+<summary><b>▶️ Chapter 07: File I/O & Data Persistence (1080p MP4)</b></summary>
+
+https://github.com/user-attachments/assets/4354269a-6545-40ea-9234-0d586976a16c
+
+</details>
+<details>
+<summary><b>▶️ Chapter 08: Object-Oriented Programming & Dataclasses (1080p MP4)</b></summary>
+
+https://github.com/user-attachments/assets/7cb0140a-9e9a-4c67-b6d3-cdf9daebd6ed
+
+</details>
+<details>
+<summary><b>▶️ Chapter 09: Modules, Packages, and Environments (1080p MP4)</b></summary>
+
+https://github.com/user-attachments/assets/22ea2c5b-380f-4134-9eb2-a1169ce2fcfc
+
+</details>
+<details>
+<summary><b>▶️ Chapter 10: Debugging, Exceptions & Testing (1080p MP4)</b></summary>
+
+https://github.com/user-attachments/assets/f4f756c9-53ed-4fe7-9af2-40fcb2b0d3ff
+
+</details>
+<details>
+<summary><b>▶️ Chapter 11: How to Read Official Documentation (1080p MP4)</b></summary>
+
+https://github.com/user-attachments/assets/6467843e-344e-4267-b0f9-26582273de91
+
+</details>
+<details>
+<summary><b>▶️ Chapter 12: Building Real Projects Beyond Basics (1080p MP4)</b></summary>
+
+https://github.com/user-attachments/assets/a04a6f8a-5e68-4f94-8763-c9ccbf5e8e93
+
+</details>
+<details>
+<summary><b>▶️ Appendix A: Modern Development Setup (VS Code) (1080p MP4)</b></summary>
+
+https://github.com/user-attachments/assets/860c53e1-be0f-4cce-9211-2cb96f5ebdec
+
+</details>
+<details>
+<summary><b>▶️ Appendix B: Git & GitHub Essentials for Self-Learners (1080p MP4)</b></summary>
+
+https://github.com/user-attachments/assets/db802696-5321-41ee-98d0-df755f353100
+
+</details>
+
+---
+
 ## 📚 Complete Video Catalog | دليل الفيديوهات الشارحة الكامل (30/30 Ready)
 
 | # | Chapter | 🇸🇦 سيناريو العربية | 🌐 English Script | 🎥 فيديو العربية (MP4) | 🎥 English Video (MP4) |
